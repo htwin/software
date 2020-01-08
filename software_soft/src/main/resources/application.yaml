@@ -1,0 +1,10 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: soft-application
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: Huangtong1998...
+    url: jdbc:mysql://47.102.120.6:3306/software?characterEncoding=utf-8
