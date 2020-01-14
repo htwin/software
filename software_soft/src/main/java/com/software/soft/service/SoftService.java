@@ -8,6 +8,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import javax.transaction.Transactional;
 
 
 @Service
@@ -44,4 +47,14 @@ public class SoftService {
 
         return softDao.findNewList(pageRequest);
     }
+
+    public Soft findById( String id){
+        return softDao.findById(id).get();
+    }
+
+    @Transactional
+    public void thumb(String id){
+        softDao.updateThumb(id);
+    }
+
 }

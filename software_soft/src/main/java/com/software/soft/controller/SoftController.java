@@ -73,4 +73,20 @@ public class SoftController {
         return new Result(true,"执行成功", StatusCode.OK,new PageResult<>(pages.getTotalElements(),pages.getContent()));
     }
 
+
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    @ApiOperation(value = "通过id查询软件详情")
+    @ApiImplicitParam(name = "id",value = "软件id",required = true)
+    public Result findById(@PathVariable String id){
+        return new Result(true,"执行成功",StatusCode.OK,softService.findById(id));
+    }
+
+    @RequestMapping(value = "/thumb/{id}",method = RequestMethod.PUT)
+    @ApiOperation(value = "点赞软件，软件的点赞数加一")
+    @ApiImplicitParam(name = "id",value = "软件id",required = true)
+    public Result thumb(@PathVariable String id){
+        softService.thumb(id);
+        return new Result(true,"点赞成功",StatusCode.OK);
+    }
+
 }

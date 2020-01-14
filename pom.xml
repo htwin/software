@@ -10,6 +10,9 @@
     <modules>
         <module>software_soft</module>
         <module>software_common</module>
+        <module>software_classify</module>
+        <module>software_comment</module>
+        <module>software_tutorial</module>
     </modules>
 
     <packaging>pom</packaging>

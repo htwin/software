@@ -4,6 +4,7 @@ import com.software.soft.pojo.Soft;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
 public interface SoftDao extends JpaRepository<Soft,String> {
@@ -15,4 +16,8 @@ public interface SoftDao extends JpaRepository<Soft,String> {
 
     @Query(value = "select * from soft order by createtime desc",nativeQuery = true)
     Page<Soft> findNewList(Pageable pageable);
+
+    @Modifying
+    @Query(value = "update soft set thumb=thumb+1 where id =?",nativeQuery = true)
+    void updateThumb( String id);
 }

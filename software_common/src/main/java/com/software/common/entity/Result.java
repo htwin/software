@@ -64,13 +64,6 @@ public class Result {
         this.message = message;
     }
 
-    public Object getResult() {
-        return data;
-    }
-
-    public void setResult(Object data) {
-        this.data = data;
-    }
 
 
 }
