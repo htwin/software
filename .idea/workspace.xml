@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="后端搭建以及软件列表实现">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_common/src/main/java/com/software/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_common/src/main/java/com/software/common/entity/Result.java" afterDir="false" />
+    <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_common/target/classes/META-INF/software_common.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/dao/SoftDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/dao/SoftDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,46 @@
       <recent name="D:\dev\software_parent\software_tutorial\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommentApplication">
+  <component name="RunManager" selected="Spring Boot.SoftApplication">
+    <configuration name="DownLoadFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.software.soft.DownLoadFileTest" />
+      <module name="software_soft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.soft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DownloadFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.software.soft.DownloadFileTest" />
+      <module name="software_soft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.soft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UploadFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.software.soft.UploadFileTest" />
+      <module name="software_soft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.soft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClassifyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="software_classify" />
       <extension name="coverage">
@@ -92,19 +131,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.classify.ClassifyApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="software_comment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.comment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.comment.CommentApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,25 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TutorialApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="software_tutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.tutorial.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.tutorial.TutorialApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CommentApplication" />
-        <item itemvalue="Spring Boot.TutorialApplication" />
-        <item itemvalue="Spring Boot.ClassifyApplication" />
         <item itemvalue="Spring Boot.SoftApplication" />
+        <item itemvalue="Application.DownloadFileTest" />
+        <item itemvalue="Application.UploadFileTest" />
+        <item itemvalue="Application.DownLoadFileTest" />
+        <item itemvalue="Spring Boot.ClassifyApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -173,6 +187,10 @@
       <workItem from="1578993616996" duration="543000" />
       <workItem from="1578994357453" duration="502000" />
       <workItem from="1578994876037" duration="119000" />
+      <workItem from="1578995267100" duration="2113000" />
+      <workItem from="1579057526639" duration="5203000" />
+      <workItem from="1579176614718" duration="2909000" />
+      <workItem from="1579246148022" duration="4269000" />
     </task>
     <task id="LOCAL-00001" summary="后端搭建以及软件列表实现">
       <created>1578462293070</created>
@@ -181,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578462293070</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第二次提交。。。。。。">
+      <created>1578995400733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578995400733</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,19 +214,98 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后端搭建以及软件列表实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端搭建以及软件列表实现" />
+    <MESSAGE value="第二次提交。。。。。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二次提交。。。。。。" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1578995399135">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1578995399135" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1579059389669">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1579059389669" />
+    <state width="1323" height="124" key="GridCell.Tab.0.bottom" timestamp="1579250315798">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="124" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
+    <state width="1323" height="124" key="GridCell.Tab.0.center" timestamp="1579250315798">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="124" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
+    <state width="1323" height="124" key="GridCell.Tab.0.left" timestamp="1579250315798">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="124" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
+    <state width="1323" height="124" key="GridCell.Tab.0.right" timestamp="1579250315798">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="124" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
+    <state width="1323" height="124" key="GridCell.Tab.1.bottom" timestamp="1579250315798">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="124" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
+    <state width="1323" height="124" key="GridCell.Tab.1.center" timestamp="1579250315798">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="124" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
+    <state width="1323" height="124" key="GridCell.Tab.1.left" timestamp="1579250315798">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="124" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
+    <state width="1323" height="124" key="GridCell.Tab.1.right" timestamp="1579250315798">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="124" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
+    <state width="1323" height="123" key="GridCell.Tab.2.bottom" timestamp="1579249863671">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="123" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579249863671" />
+    <state width="1323" height="123" key="GridCell.Tab.2.center" timestamp="1579249863671">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="123" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1579249863671" />
+    <state width="1323" height="123" key="GridCell.Tab.2.left" timestamp="1579249863671">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="123" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1579249863671" />
+    <state width="1323" height="123" key="GridCell.Tab.2.right" timestamp="1579249863671">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="123" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1579249863671" />
     <state x="221" y="0" key="SettingsEditor" timestamp="1578994996648">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1578994996648" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1578995454496">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1578995454496" />
     <state x="368" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1578792594278">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="368" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1578792594278" />
+    <state x="57" y="0" key="new project wizard" timestamp="1579059401958">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="57" y="0" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1579059401958" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="pages" />

@@ -3,14 +3,27 @@ package com.software.soft.controller;
 import com.software.common.entity.PageResult;
 import com.software.common.entity.Result;
 import com.software.common.entity.StatusCode;
+import com.software.common.util.FastDFSUtil;
+import com.software.soft.pojo.Soft;
 import com.software.soft.service.SoftService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.csource.common.MyException;
+import org.csource.fastdfs.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 @RestController
 @RequestMapping("/soft")
@@ -20,6 +33,19 @@ public class SoftController {
     @Autowired
     private SoftService softService;
 
+    @RequestMapping(value = "/download",method = RequestMethod.POST)
+    @ApiOperation(value = "软件下载")
+    public void download(@RequestBody Soft soft){
+        //group1-M00/00/00/wKhihF4hZwmAJoXHAAAXA0yMGTo637.png
+        try {
+            softService.download(soft);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     @RequestMapping(value = "/list/{page}/{size}",method = RequestMethod.GET)
     @ApiOperation( value = "查询软件列表")
