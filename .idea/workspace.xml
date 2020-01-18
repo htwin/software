@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_common/target/classes/META-INF/software_common.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +57,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578564062299" />
@@ -191,6 +189,8 @@
       <workItem from="1579057526639" duration="5203000" />
       <workItem from="1579176614718" duration="2909000" />
       <workItem from="1579246148022" duration="4269000" />
+      <workItem from="1579352949822" duration="702000" />
+      <workItem from="1579354752107" duration="246000" />
     </task>
     <task id="LOCAL-00001" summary="后端搭建以及软件列表实现">
       <created>1578462293070</created>
@@ -212,6 +212,42 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后端搭建以及软件列表实现" />
     <MESSAGE value="第二次提交。。。。。。" />
@@ -222,6 +258,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1578995399135" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1579353079486">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1579353079486" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1579059389669">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -282,26 +322,25 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1578995454496" />
+    <state x="424" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1579353032094">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="424" y="103" key="VcsDiffUtil.ChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1579353032094" />
     <state x="368" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1578792594278">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="368" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1578792594278" />
-    <state x="57" y="0" key="new project wizard" timestamp="1579059401958">
+    <state x="57" y="0" key="new project wizard" timestamp="1579354814654">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="57" y="0" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1579059401958" />
+    <state x="57" y="0" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1579354814654" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java</url>
-          <line>80</line>
+          <line>78</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

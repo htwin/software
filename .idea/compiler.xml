@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="software_soft" />
+        <module name="software_classify" />
         <module name="software_tutorial" />
         <module name="software_comment" />
+        <module name="software_soft" />
+        <module name="software_user" />
         <module name="software_common" />
-        <module name="software_classify" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,6 +22,7 @@
       <module name="software_common" options="-parameters" />
       <module name="software_soft" options="-parameters" />
       <module name="software_tutorial" options="-parameters" />
+      <module name="software_user" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,6 +1,5 @@
 package com.software.soft.service;
 
-import com.software.common.entity.PageResult;
 import com.software.common.util.FastDFSUtil;
 import com.software.soft.dao.SoftDao;
 import com.software.soft.pojo.Soft;
@@ -9,7 +8,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.servlet.ServletOutputStream;

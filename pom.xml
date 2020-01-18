@@ -13,6 +13,7 @@
         <module>software_classify</module>
         <module>software_comment</module>
         <module>software_tutorial</module>
+        <module>software_user</module>
     </modules>
 
     <packaging>pom</packaging>
