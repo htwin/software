@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_classify/src/main/java/com/software/classify/ClassifyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_classify/src/main/java/com/software/classify/ClassifyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_classify/src/main/java/com/software/classify/controller/ClassifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_classify/src/main/java/com/software/classify/controller/ClassifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_classify/src/main/java/com/software/classify/service/ClassifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_classify/src/main/java/com/software/classify/service/ClassifyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_classify/target/classes/com/software/classify/ClassifyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_classify/target/classes/com/software/classify/ClassifyApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_classify/target/classes/com/software/classify/controller/ClassifyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_classify/target/classes/com/software/classify/controller/ClassifyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_classify/target/classes/com/software/classify/service/ClassifyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_classify/target/classes/com/software/classify/service/ClassifyService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,22 +84,9 @@
       <recent name="D:\dev\software_parent\software_tutorial\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminApplication">
+  <component name="RunManager" selected="Spring Boot.ClassifyApplication">
     <configuration name="DownloadFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.software.soft.DownloadFileTest" />
-      <module name="software_soft" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.soft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UploadFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.software.soft.UploadFileTest" />
       <module name="software_soft" />
       <extension name="coverage">
         <pattern>
@@ -117,6 +107,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.admin.AdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassifyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="software_classify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.classify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.classify.ClassifyApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ClassifyApplication" />
         <item itemvalue="Spring Boot.AdminApplication" />
         <item itemvalue="Spring Boot.SoftApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Application.DownloadFileTest" />
-        <item itemvalue="Application.UploadFileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +195,7 @@
       <workItem from="1579246148022" duration="4269000" />
       <workItem from="1579352949822" duration="702000" />
       <workItem from="1579354752107" duration="1699000" />
-      <workItem from="1579397273245" duration="7152000" />
+      <workItem from="1579397273245" duration="8417000" />
     </task>
     <task id="LOCAL-00001" summary="后端搭建以及软件列表实现">
       <created>1578462293070</created>
@@ -222,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579434105791</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="搭建管理员模块，完成管理员登录">
+      <created>1579435339090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579435339090</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +279,8 @@
     <MESSAGE value="第二次提交。。。。。。" />
     <MESSAGE value="FastDFSUtil" />
     <MESSAGE value="完成普通用户端功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成普通用户端功能" />
+    <MESSAGE value="搭建管理员模块，完成管理员登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="搭建管理员模块，完成管理员登录" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1579434465287">
@@ -280,10 +291,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="451" y="228" width="464" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1579416599630" />
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1579434104646">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1579435338174">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579434104646" />
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579435338174" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1579353079486">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -292,38 +303,38 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1579059389669" />
-    <state width="1323" height="206" key="GridCell.Tab.0.bottom" timestamp="1579435239121">
+    <state width="1323" height="206" key="GridCell.Tab.0.bottom" timestamp="1579436097997">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579435239121" />
-    <state width="1323" height="206" key="GridCell.Tab.0.center" timestamp="1579435239120">
+    <state width="1323" height="206" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579436097997" />
+    <state width="1323" height="206" key="GridCell.Tab.0.center" timestamp="1579436097997">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1579435239120" />
-    <state width="1323" height="206" key="GridCell.Tab.0.left" timestamp="1579435239120">
+    <state width="1323" height="206" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1579436097997" />
+    <state width="1323" height="206" key="GridCell.Tab.0.left" timestamp="1579436097997">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1579435239120" />
-    <state width="1323" height="206" key="GridCell.Tab.0.right" timestamp="1579435239121">
+    <state width="1323" height="206" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1579436097997" />
+    <state width="1323" height="206" key="GridCell.Tab.0.right" timestamp="1579436097997">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1579435239121" />
-    <state width="1323" height="206" key="GridCell.Tab.1.bottom" timestamp="1579435239121">
+    <state width="1323" height="206" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1579436097997" />
+    <state width="1323" height="206" key="GridCell.Tab.1.bottom" timestamp="1579436097997">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579435239121" />
-    <state width="1323" height="206" key="GridCell.Tab.1.center" timestamp="1579435239121">
+    <state width="1323" height="206" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579436097997" />
+    <state width="1323" height="206" key="GridCell.Tab.1.center" timestamp="1579436097997">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1579435239121" />
-    <state width="1323" height="206" key="GridCell.Tab.1.left" timestamp="1579435239121">
+    <state width="1323" height="206" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1579436097997" />
+    <state width="1323" height="206" key="GridCell.Tab.1.left" timestamp="1579436097997">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1579435239121" />
-    <state width="1323" height="206" key="GridCell.Tab.1.right" timestamp="1579435239121">
+    <state width="1323" height="206" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1579436097997" />
+    <state width="1323" height="206" key="GridCell.Tab.1.right" timestamp="1579436097997">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1579435239121" />
+    <state width="1323" height="206" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1579436097997" />
     <state width="1323" height="56" key="GridCell.Tab.2.bottom" timestamp="1579435155888">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -344,10 +355,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1578994996648" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1579434128175">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1579435345794">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579434128175" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579435345794" />
     <state x="424" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1579353032094">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
