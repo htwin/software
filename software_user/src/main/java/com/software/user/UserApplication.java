@@ -1,4 +1,4 @@
-package com.software.soft;
+package com.software.user;
 
 import com.software.common.util.JwtUtil;
 import org.springframework.boot.SpringApplication;
@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class SoftApplication {
+public class UserApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SoftApplication.class,args);
+        SpringApplication.run(UserApplication.class,args);
     }
 
     @Bean

@@ -2,11 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_classify/target/classes/com/software/classify/controller/BaseExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_common/src/main/java/com/software/common/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_common/src/main/resources/client.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_common/target/classes/client.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/filter/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/config/ApplicationConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/filter/JwtFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/UserApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_common/target/classes/com/software/common/util/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_common/target/classes/com/software/common/util/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/SoftApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/SoftApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/META-INF/software_soft.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/SoftApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/SoftApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +100,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.software.user.config" />
       <recent name="com.software.tutorial.controller" />
       <recent name="com.software.tutorial.config" />
       <recent name="com.software.classify.controller" />
@@ -120,19 +150,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClassifyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="software_classify" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.classify.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.classify.ClassifyApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SoftApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="software_soft" />
       <extension name="coverage">
@@ -146,13 +163,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="software_user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SoftApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Application.DownloadFileTest" />
         <item itemvalue="Application.UploadFileTest" />
         <item itemvalue="Application.DownLoadFileTest" />
-        <item itemvalue="Spring Boot.ClassifyApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +220,8 @@
       <workItem from="1579176614718" duration="2909000" />
       <workItem from="1579246148022" duration="4269000" />
       <workItem from="1579352949822" duration="702000" />
-      <workItem from="1579354752107" duration="246000" />
+      <workItem from="1579354752107" duration="1699000" />
+      <workItem from="1579397273245" duration="6015000" />
     </task>
     <task id="LOCAL-00001" summary="后端搭建以及软件列表实现">
       <created>1578462293070</created>
@@ -206,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578995400733</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="FastDFSUtil">
+      <created>1579355065381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579355065381</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,13 +289,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后端搭建以及软件列表实现" />
     <MESSAGE value="第二次提交。。。。。。" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二次提交。。。。。。" />
+    <MESSAGE value="FastDFSUtil" />
+    <option name="LAST_COMMIT_MESSAGE" value="FastDFSUtil" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1578995399135">
+    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1579417251324">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1578995399135" />
+    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1579417251324" />
+    <state x="451" y="228" width="464" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579416599630">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="451" y="228" width="464" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1579416599630" />
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1579355064077">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579355064077" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1579353079486">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -266,62 +313,62 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1579059389669" />
-    <state width="1323" height="124" key="GridCell.Tab.0.bottom" timestamp="1579250315798">
+    <state width="1323" height="189" key="GridCell.Tab.0.bottom" timestamp="1579419785712">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
-    <state width="1323" height="124" key="GridCell.Tab.0.center" timestamp="1579250315798">
+    <state width="1323" height="189" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579419785712" />
+    <state width="1323" height="189" key="GridCell.Tab.0.center" timestamp="1579419785712">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
-    <state width="1323" height="124" key="GridCell.Tab.0.left" timestamp="1579250315798">
+    <state width="1323" height="189" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1579419785712" />
+    <state width="1323" height="189" key="GridCell.Tab.0.left" timestamp="1579419785711">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
-    <state width="1323" height="124" key="GridCell.Tab.0.right" timestamp="1579250315798">
+    <state width="1323" height="189" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1579419785711" />
+    <state width="1323" height="189" key="GridCell.Tab.0.right" timestamp="1579419785712">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
-    <state width="1323" height="124" key="GridCell.Tab.1.bottom" timestamp="1579250315798">
+    <state width="1323" height="189" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1579419785712" />
+    <state width="1323" height="189" key="GridCell.Tab.1.bottom" timestamp="1579419785513">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
-    <state width="1323" height="124" key="GridCell.Tab.1.center" timestamp="1579250315798">
+    <state width="1323" height="189" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579419785513" />
+    <state width="1323" height="189" key="GridCell.Tab.1.center" timestamp="1579419785513">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
-    <state width="1323" height="124" key="GridCell.Tab.1.left" timestamp="1579250315798">
+    <state width="1323" height="189" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1579419785513" />
+    <state width="1323" height="189" key="GridCell.Tab.1.left" timestamp="1579419785513">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
-    <state width="1323" height="124" key="GridCell.Tab.1.right" timestamp="1579250315798">
+    <state width="1323" height="189" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1579419785513" />
+    <state width="1323" height="189" key="GridCell.Tab.1.right" timestamp="1579419785513">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1579250315798" />
-    <state width="1323" height="123" key="GridCell.Tab.2.bottom" timestamp="1579249863671">
+    <state width="1323" height="189" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1579419785513" />
+    <state width="1323" height="189" key="GridCell.Tab.2.bottom" timestamp="1579419785514">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="123" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579249863671" />
-    <state width="1323" height="123" key="GridCell.Tab.2.center" timestamp="1579249863671">
+    <state width="1323" height="189" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579419785514" />
+    <state width="1323" height="189" key="GridCell.Tab.2.center" timestamp="1579419785513">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="123" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1579249863671" />
-    <state width="1323" height="123" key="GridCell.Tab.2.left" timestamp="1579249863671">
+    <state width="1323" height="189" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1579419785513" />
+    <state width="1323" height="189" key="GridCell.Tab.2.left" timestamp="1579419785513">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="123" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1579249863671" />
-    <state width="1323" height="123" key="GridCell.Tab.2.right" timestamp="1579249863671">
+    <state width="1323" height="189" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1579419785513" />
+    <state width="1323" height="189" key="GridCell.Tab.2.right" timestamp="1579419785514">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="123" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1579249863671" />
+    <state width="1323" height="189" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1579419785514" />
     <state x="221" y="0" key="SettingsEditor" timestamp="1578994996648">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1578994996648" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1578995454496">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1579355070317">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1578995454496" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579355070317" />
     <state x="424" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1579353032094">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -334,14 +381,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="57" y="0" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1579354814654" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1579417569986">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1579417569986" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/filter/JwtFilter.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

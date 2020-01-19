@@ -1,8 +1,8 @@
 server:
-  port: 9001
+  port: 9005
 spring:
   application:
-    name: soft-application
+    name: user-application
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -11,4 +11,4 @@ spring:
 jwt:
   config:
     key: huangtong  #秘钥
-    ttl: 3600000 #一个小时60 60 3600000
+    ttl: 360000 #一个小时

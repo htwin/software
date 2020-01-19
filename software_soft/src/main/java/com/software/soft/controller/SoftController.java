@@ -6,6 +6,7 @@ import com.software.common.entity.StatusCode;
 import com.software.common.util.FastDFSUtil;
 import com.software.soft.pojo.Soft;
 import com.software.soft.service.SoftService;
+import io.jsonwebtoken.Claims;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -33,10 +34,20 @@ public class SoftController {
     @Autowired
     private SoftService softService;
 
+    @Autowired
+    private HttpServletRequest request;
+
     @RequestMapping(value = "/download",method = RequestMethod.POST)
     @ApiOperation(value = "软件下载")
-    public void download(@RequestBody Soft soft){
+    public Result download(@RequestBody Soft soft){
         //group1-M00/00/00/wKhihF4hZwmAJoXHAAAXA0yMGTo637.png
+
+        //下载软件需要登录 user权限
+        Claims claims = (Claims) request.getAttribute("user_claims");
+        if(claims == null){
+            return new Result(false,"请登录",StatusCode.ERROR);
+        }
+
         try {
             softService.download(soft);
         } catch (UnsupportedEncodingException e) {
@@ -44,6 +55,7 @@ public class SoftController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return new Result(true,"下载成功",StatusCode.OK);
 
     }
 
