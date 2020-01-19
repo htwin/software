@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/software_admin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_classify" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_classify/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_comment" charset="UTF-8" />

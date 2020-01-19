@@ -14,6 +14,7 @@
         <module>software_comment</module>
         <module>software_tutorial</module>
         <module>software_user</module>
+        <module>software_admin</module>
     </modules>
 
     <packaging>pom</packaging>

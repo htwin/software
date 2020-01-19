@@ -9,6 +9,7 @@
         <module name="software_classify" />
         <module name="software_tutorial" />
         <module name="software_comment" />
+        <module name="software_admin" />
         <module name="software_soft" />
         <module name="software_user" />
         <module name="software_common" />
@@ -17,6 +18,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="software_admin" options="-parameters" />
       <module name="software_classify" options="-parameters" />
       <module name="software_comment" options="-parameters" />
       <module name="software_common" options="-parameters" />
