@@ -3,7 +3,11 @@ package com.software.user.service;
 import com.software.user.dao.UserDao;
 import com.software.user.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserService {
@@ -25,6 +29,34 @@ public class UserService {
 
         }
         return null;
+
+    }
+
+    //新增普通用户
+    public void add(User user){
+        userDao.save(user);
+    }
+
+    //删除用户
+    public void deleteById(String id){
+        userDao.deleteById(id);
+    }
+
+    //修改普通用户
+    public void update(User user){
+        userDao.save(user);
+    }
+
+    //查询用户列表，可附带条件  (姓名)    user:条件
+    public Page search(int page, int size, User user){
+
+        //封装条件   查询
+
+
+        //分页查询
+        PageRequest pageRequest = PageRequest.of(page - 1, size);
+        return userDao.findAll(pageRequest);
+
 
     }
 

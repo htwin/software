@@ -9,10 +9,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -47,9 +44,35 @@ public class UserController {
         }
 
         return new Result(false,"用户名或密码错误", StatusCode.ERROR);
-
-
-
     }
+
+    @RequestMapping(value = "/search/{page}/{size}",method = RequestMethod.POST)
+    @ApiOperation(value = "用户列表")
+    public Result search(@PathVariable int page,@PathVariable int size,@RequestBody User user){
+        userService.search(page,size,user);
+        return new Result(true,"查询成功",StatusCode.OK);
+    }
+
+    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @ApiOperation(value = "添加用户")
+    public Result add(@RequestBody User user){
+        userService.add(user);
+        return new Result(true,"添加成功",StatusCode.OK);
+    }
+
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.POST)
+    @ApiOperation(value = "根据id删除用户")
+    public Result deleteById(@PathVariable String id){
+        userService.deleteById(id);
+        return new Result(true,"删除成功",StatusCode.OK);
+    }
+
+    @RequestMapping(value = "/update",method = RequestMethod.PUT)
+    @ApiOperation(value = "修改用户信息")
+    public Result update(@RequestBody User user){
+        userService.update(user);
+        return new Result(true,"修改成功",StatusCode.OK);
+    }
+
 
 }

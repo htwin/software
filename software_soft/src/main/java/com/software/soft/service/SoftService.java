@@ -1,6 +1,7 @@
 package com.software.soft.service;
 
 import com.software.common.util.FastDFSUtil;
+import com.software.common.util.IdWorker;
 import com.software.soft.dao.SoftDao;
 import com.software.soft.pojo.Soft;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import javax.transaction.Transactional;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.Date;
 
 
 @Service
@@ -30,6 +32,9 @@ public class SoftService {
 
     @Autowired
     private HttpServletResponse response;
+
+    @Autowired
+    private IdWorker idWorker;
 
     public Page getSoftList(int page, int size) {
 
@@ -93,5 +98,23 @@ public class SoftService {
         out.flush();
         out.close();
 
+    }
+
+    public void add(Soft soft){
+        //封装
+        soft.setId(idWorker.nextId()+"");
+        soft.setCreatetime(new Date());
+        soft.setUpdatetime(new Date());
+        softDao.save(soft);
+    }
+
+    //根据id删除
+    public void deleteById(String id){
+        softDao.deleteById(id);
+    }
+
+    //更新软件
+    public void update(Soft soft) {
+        softDao.save(soft);
     }
 }

@@ -88,7 +88,7 @@ public class SoftController {
     }
 
     @RequestMapping(value = "/hotList/{page}/{size}",method = RequestMethod.GET)
-    @ApiOperation( value = "查询热门(推荐)软件")
+    @ApiOperation( value = "热门(推荐)软件列表")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "page", value = "页码", defaultValue = "1"),
             @ApiImplicitParam(name = "size", value = "每页大小", defaultValue = "10")
@@ -100,7 +100,7 @@ public class SoftController {
     }
 
     @RequestMapping(value = "/newList/{page}/{size}",method = RequestMethod.GET)
-    @ApiOperation( value = "查询最新软件")
+    @ApiOperation( value = "最新软件列表")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "page", value = "页码", defaultValue = "1"),
             @ApiImplicitParam(name = "size", value = "每页大小", defaultValue = "10")
@@ -125,6 +125,27 @@ public class SoftController {
     public Result thumb(@PathVariable String id){
         softService.thumb(id);
         return new Result(true,"点赞成功",StatusCode.OK);
+    }
+
+    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @ApiOperation(value = "添加软件")
+    public Result add(@RequestBody Soft soft){
+        softService.add(soft);
+        return new Result(true,"添加成功",StatusCode.OK);
+    }
+
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.POST)
+    @ApiOperation(value = "根据id删除软件")
+    public Result deleteById(@PathVariable String id){
+        softService.deleteById(id);
+        return new Result(true,"删除成功",StatusCode.OK);
+    }
+
+    @RequestMapping(value = "/update",method = RequestMethod.PUT)
+    @ApiOperation(value = "更新软件")
+    public Result update(@RequestBody Soft soft){
+        softService.update(soft);
+        return new Result(true,"更新成功",StatusCode.OK);
     }
 
 }
