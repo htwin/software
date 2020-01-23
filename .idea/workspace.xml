@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/SoftApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/SoftApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/controller/TutorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/controller/TutorialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/dao/TutorialDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/dao/TutorialDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/service/TutorialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/service/TutorialService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +194,9 @@
       <workItem from="1579354752107" duration="1699000" />
       <workItem from="1579397273245" duration="8679000" />
       <workItem from="1579520488858" duration="2164000" />
-      <workItem from="1579610320370" duration="1046000" />
+      <workItem from="1579610320370" duration="1145000" />
+      <workItem from="1579677948598" duration="1808000" />
+      <workItem from="1579765337453" duration="1672000" />
     </task>
     <task id="LOCAL-00001" summary="后端搭建以及软件列表实现">
       <created>1578462293070</created>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579436535825</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="软件的增删改，，用户的增删改查">
+      <created>1579611416872</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579611416872</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +296,8 @@
     <MESSAGE value="完成普通用户端功能" />
     <MESSAGE value="搭建管理员模块，完成管理员登录" />
     <MESSAGE value="类别模块的增删改" />
-    <option name="LAST_COMMIT_MESSAGE" value="类别模块的增删改" />
+    <MESSAGE value="软件的增删改，，用户的增删改查" />
+    <option name="LAST_COMMIT_MESSAGE" value="软件的增删改，，用户的增删改查" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1579434465287">
@@ -300,10 +308,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="451" y="228" width="464" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1579416599630" />
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1579436534964">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1579611415839">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579436534964" />
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579611415839" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1579353079486">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -364,10 +372,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1578994996648" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1579436539710">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1579611425551">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579436539710" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579611425551" />
     <state x="424" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1579353032094">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

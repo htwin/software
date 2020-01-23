@@ -7,4 +7,6 @@ public interface TutorialDao extends JpaRepository<Tutorial,String> {
 
     Tutorial findBySoftwareId(String softwareId);
 
+    void deleteBySoftwareId(String softwareId);
+
 }
