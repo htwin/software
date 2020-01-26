@@ -3,9 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/SoftApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/SoftApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/config/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/TutorialApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/TutorialApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/controller/TutorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/controller/TutorialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/dao/TutorialDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/dao/TutorialDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/service/TutorialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/service/TutorialService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/TutorialApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/TutorialApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/controller/TutorialController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/controller/TutorialController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/dao/TutorialDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/dao/TutorialDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/service/TutorialService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/service/TutorialService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/UserApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,35 +83,23 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.software.soft.config" />
       <recent name="com.software.user.config" />
       <recent name="com.software.tutorial.controller" />
       <recent name="com.software.tutorial.config" />
       <recent name="com.software.classify.controller" />
-      <recent name="com.software.comment.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\dev\software_parent\software_admin\src\main\resources" />
       <recent name="D:\dev\software_parent\software_tutorial\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ClassifyApplication">
-    <configuration name="DownloadFileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.software.soft.DownloadFileTest" />
-      <module name="software_soft" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.soft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.TutorialApplication">
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="software_admin" />
       <extension name="coverage">
@@ -134,6 +139,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TutorialApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="software_tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.tutorial.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.tutorial.TutorialApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="software_user" />
       <extension name="coverage">
@@ -149,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.TutorialApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.SoftApplication" />
         <item itemvalue="Spring Boot.ClassifyApplication" />
         <item itemvalue="Spring Boot.AdminApplication" />
-        <item itemvalue="Spring Boot.SoftApplication" />
-        <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Application.DownloadFileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +214,8 @@
       <workItem from="1579520488858" duration="2164000" />
       <workItem from="1579610320370" duration="1145000" />
       <workItem from="1579677948598" duration="1808000" />
-      <workItem from="1579765337453" duration="1672000" />
+      <workItem from="1579765337453" duration="5136000" />
+      <workItem from="1580003722050" duration="5504000" />
     </task>
     <task id="LOCAL-00001" summary="后端搭建以及软件列表实现">
       <created>1578462293070</created>
@@ -247,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579611416872</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="教程管理-教程的增删改查">
+      <created>1579767285045</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579767285045</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,21 +323,22 @@
     <MESSAGE value="搭建管理员模块，完成管理员登录" />
     <MESSAGE value="类别模块的增删改" />
     <MESSAGE value="软件的增删改，，用户的增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="软件的增删改，，用户的增删改查" />
+    <MESSAGE value="教程管理-教程的增删改查" />
+    <option name="LAST_COMMIT_MESSAGE" value="教程管理-教程的增删改查" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1579434465287">
+    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1580007481029">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1579434465287" />
+    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1580007481029" />
     <state x="451" y="228" width="464" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579416599630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="451" y="228" width="464" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1579416599630" />
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1579611415839">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1579767284019">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579611415839" />
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579767284019" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1579353079486">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -320,62 +347,62 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1579436677310" />
-    <state width="1323" height="56" key="GridCell.Tab.0.bottom" timestamp="1579436678446">
+    <state width="1323" height="122" key="GridCell.Tab.0.bottom" timestamp="1580018066854">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579436678446" />
-    <state width="1323" height="56" key="GridCell.Tab.0.center" timestamp="1579436678446">
+    <state width="1323" height="122" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580018066854" />
+    <state width="1323" height="122" key="GridCell.Tab.0.center" timestamp="1580018066854">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1579436678446" />
-    <state width="1323" height="56" key="GridCell.Tab.0.left" timestamp="1579436678446">
+    <state width="1323" height="122" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1580018066854" />
+    <state width="1323" height="122" key="GridCell.Tab.0.left" timestamp="1580018066854">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1579436678446" />
-    <state width="1323" height="56" key="GridCell.Tab.0.right" timestamp="1579436678446">
+    <state width="1323" height="122" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1580018066854" />
+    <state width="1323" height="122" key="GridCell.Tab.0.right" timestamp="1580018066854">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1579436678446" />
-    <state width="1323" height="56" key="GridCell.Tab.1.bottom" timestamp="1579436678447">
+    <state width="1323" height="122" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1580018066854" />
+    <state width="1323" height="122" key="GridCell.Tab.1.bottom" timestamp="1580018066855">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579436678447" />
-    <state width="1323" height="56" key="GridCell.Tab.1.center" timestamp="1579436678446">
+    <state width="1323" height="122" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580018066855" />
+    <state width="1323" height="122" key="GridCell.Tab.1.center" timestamp="1580018066855">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1579436678446" />
-    <state width="1323" height="56" key="GridCell.Tab.1.left" timestamp="1579436678446">
+    <state width="1323" height="122" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1580018066855" />
+    <state width="1323" height="122" key="GridCell.Tab.1.left" timestamp="1580018066855">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1579436678446" />
-    <state width="1323" height="56" key="GridCell.Tab.1.right" timestamp="1579436678446">
+    <state width="1323" height="122" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1580018066855" />
+    <state width="1323" height="122" key="GridCell.Tab.1.right" timestamp="1580018066855">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1579436678446" />
-    <state width="1323" height="56" key="GridCell.Tab.2.bottom" timestamp="1579436678447">
+    <state width="1323" height="122" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1580018066855" />
+    <state width="1323" height="94" key="GridCell.Tab.2.bottom" timestamp="1579785436359">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579436678447" />
-    <state width="1323" height="56" key="GridCell.Tab.2.center" timestamp="1579436678447">
+    <state width="1323" height="94" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579785436359" />
+    <state width="1323" height="94" key="GridCell.Tab.2.center" timestamp="1579785436359">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1579436678447" />
-    <state width="1323" height="56" key="GridCell.Tab.2.left" timestamp="1579436678447">
+    <state width="1323" height="94" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1579785436359" />
+    <state width="1323" height="94" key="GridCell.Tab.2.left" timestamp="1579785436358">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1579436678447" />
-    <state width="1323" height="56" key="GridCell.Tab.2.right" timestamp="1579436678447">
+    <state width="1323" height="94" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1579785436358" />
+    <state width="1323" height="94" key="GridCell.Tab.2.right" timestamp="1579785436359">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="56" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1579436678447" />
+    <state width="1323" height="94" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1579785436359" />
     <state x="221" y="0" key="SettingsEditor" timestamp="1578994996648">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1578994996648" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1579611425551">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1579767289843">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579611425551" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579767289843" />
     <state x="424" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1579353032094">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

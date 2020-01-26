@@ -1,5 +1,6 @@
 package com.software.user;
 
+import com.software.common.util.IdWorker;
 import com.software.common.util.JwtUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +15,10 @@ public class UserApplication {
     @Bean
     public JwtUtil jwtUtil(){
         return new JwtUtil();
+    }
+    @Bean
+    public IdWorker idWorker(){
+        return new IdWorker(1,1);
     }
 
 }

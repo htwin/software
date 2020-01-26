@@ -1,5 +1,6 @@
 package com.software.tutorial.controller;
 
+import com.software.common.entity.PageResult;
 import com.software.common.entity.Result;
 import com.software.common.entity.StatusCode;
 import com.software.tutorial.pojo.Tutorial;
@@ -8,6 +9,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -28,8 +30,15 @@ public class TutorialController {
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     @ApiOperation(value = "添加教程")
     public Result add(@RequestBody Tutorial tutorial){
-        tutorialService.add(tutorial);
-        return new Result(true,"添加成功",StatusCode.OK);
+        boolean success = tutorialService.add(tutorial);
+
+        if(success){
+            return new Result(true,"添加成功",StatusCode.OK);
+        }else{
+            return new Result(false,"失败！！该软件下可能已经有教程",StatusCode.ERROR);
+        }
+
+
     }
 
     @RequestMapping(value = "/deleteById/{id}",method = RequestMethod.POST)
@@ -56,8 +65,8 @@ public class TutorialController {
     @RequestMapping(value = "/search/{page}/{size}",method = RequestMethod.POST)
     @ApiOperation(value = "教程教程==列表")
     public Result search(@PathVariable int page,@PathVariable int size,@RequestBody Tutorial tutorial){
-        tutorialService.search(page,size,tutorial);
-        return new Result(true,"查询成功",StatusCode.OK);
+        Page pageResult = tutorialService.search(page, size, tutorial);
+        return new Result(true,"查询成功",StatusCode.OK,new PageResult<>(pageResult.getTotalElements(),pageResult.getContent()));
     }
 
 

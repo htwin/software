@@ -1,5 +1,6 @@
 package com.software.user.controller;
 
+import com.software.common.entity.PageResult;
 import com.software.common.entity.Result;
 import com.software.common.entity.StatusCode;
 import com.software.common.util.JwtUtil;
@@ -9,6 +10,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -49,8 +51,11 @@ public class UserController {
     @RequestMapping(value = "/search/{page}/{size}",method = RequestMethod.POST)
     @ApiOperation(value = "用户列表")
     public Result search(@PathVariable int page,@PathVariable int size,@RequestBody User user){
-        userService.search(page,size,user);
-        return new Result(true,"查询成功",StatusCode.OK);
+        Page pageResult = userService.search(page, size, user);
+
+
+
+        return new Result(true,"查询成功",StatusCode.OK,new PageResult<>(pageResult.getTotalElements(),pageResult.getContent()));
     }
 
     @RequestMapping(value = "/add",method = RequestMethod.POST)

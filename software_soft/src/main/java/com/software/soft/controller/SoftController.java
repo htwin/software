@@ -3,7 +3,6 @@ package com.software.soft.controller;
 import com.software.common.entity.PageResult;
 import com.software.common.entity.Result;
 import com.software.common.entity.StatusCode;
-import com.software.common.util.FastDFSUtil;
 import com.software.soft.pojo.Soft;
 import com.software.soft.service.SoftService;
 import io.jsonwebtoken.Claims;
@@ -11,20 +10,12 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.csource.common.MyException;
-import org.csource.fastdfs.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 
 @RestController
 @RequestMapping("/soft")
@@ -59,16 +50,16 @@ public class SoftController {
 
     }
 
-    @RequestMapping(value = "/list/{page}/{size}",method = RequestMethod.GET)
+    @RequestMapping(value = "/search/{page}/{size}",method = RequestMethod.POST)
     @ApiOperation( value = "查询软件列表")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "page", value = "页码", defaultValue = "1"),
             @ApiImplicitParam(name = "size", value = "每页大小", defaultValue = "10")
     }
     )
-    public Result softList(@PathVariable int page,@PathVariable int size){
+    public Result search(@PathVariable int page,@PathVariable int size,@RequestBody Soft soft){
 
-         Page pages = softService.getSoftList(page, size);
+         Page pages = softService.search(page, size,soft);
 
          return new Result(true,"执行成功", StatusCode.OK,new PageResult<>(pages.getTotalElements(),pages.getContent()));
     }
@@ -130,6 +121,8 @@ public class SoftController {
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     @ApiOperation(value = "添加软件")
     public Result add(@RequestBody Soft soft){
+
+        //上传软件到fastdfs
         softService.add(soft);
         return new Result(true,"添加成功",StatusCode.OK);
     }

@@ -36,7 +36,9 @@ public class SoftService {
     @Autowired
     private IdWorker idWorker;
 
-    public Page getSoftList(int page, int size) {
+    public Page search(int page, int size,Soft soft) {
+
+        //忽略条件查询
 
         Pageable pageable = PageRequest.of(page - 1, size);
 
@@ -103,6 +105,12 @@ public class SoftService {
     public void add(Soft soft){
         //封装
         soft.setId(idWorker.nextId()+"");
+        //设置默认值
+        soft.setComment(0);//评论数
+        soft.setIshot(0);//是否热门
+        soft.setDownload(0);//下载数
+        soft.setScore(0);//评分 0
+        soft.setThumb(0);//点赞数 0
         soft.setCreatetime(new Date());
         soft.setUpdatetime(new Date());
         softDao.save(soft);
