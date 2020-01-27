@@ -1,5 +1,6 @@
 package com.software.soft;
 
+import com.software.common.util.FastDFSUtil;
 import com.software.common.util.IdWorker;
 import com.software.common.util.JwtUtil;
 import org.springframework.boot.SpringApplication;
@@ -20,6 +21,11 @@ public class SoftApplication {
     @Bean
     public IdWorker idWorker(){
         return new IdWorker();
+    }
+
+    @Bean
+    public FastDFSUtil fastDFSUtil(){
+        return new FastDFSUtil();
     }
 
 }

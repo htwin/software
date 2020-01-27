@@ -34,6 +34,9 @@ public class SoftService {
     private HttpServletResponse response;
 
     @Autowired
+    private FastDFSUtil fastDFSUtil;
+
+    @Autowired
     private IdWorker idWorker;
 
     public Page search(int page, int size,Soft soft) {
@@ -80,7 +83,7 @@ public class SoftService {
         //group1-M00/00/00/wKhihF4hZwmAJoXHAAAXA0yMGTo637.png
         String[] fileId = soft.getUrl().split("-");
 
-        byte[] file = FastDFSUtil.download(fileId[0], fileId[1]);
+        byte[] file = fastDFSUtil.download(fileId[0], fileId[1]);
 
         //扩展名
         String extName = soft.getUrl().substring(soft.getUrl().lastIndexOf("."));

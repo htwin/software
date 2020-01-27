@@ -3,6 +3,7 @@ package com.software.soft.controller;
 import com.software.common.entity.PageResult;
 import com.software.common.entity.Result;
 import com.software.common.entity.StatusCode;
+import com.software.common.util.FastDFSUtil;
 import com.software.soft.pojo.Soft;
 import com.software.soft.service.SoftService;
 import io.jsonwebtoken.Claims;
@@ -13,6 +14,8 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -28,16 +31,19 @@ public class SoftController {
     @Autowired
     private HttpServletRequest request;
 
+    @Autowired
+    private FastDFSUtil fastDFSUtil;
+
     @RequestMapping(value = "/download",method = RequestMethod.POST)
     @ApiOperation(value = "软件下载")
     public Result download(@RequestBody Soft soft){
         //group1-M00/00/00/wKhihF4hZwmAJoXHAAAXA0yMGTo637.png
 
         //下载软件需要登录 user权限
-        Claims claims = (Claims) request.getAttribute("user_claims");
+       /* Claims claims = (Claims) request.getAttribute("user_claims");
         if(claims == null){
             return new Result(false,"请登录",StatusCode.ERROR);
-        }
+        }*/
 
         try {
             softService.download(soft);
@@ -118,13 +124,50 @@ public class SoftController {
         return new Result(true,"点赞成功",StatusCode.OK);
     }
 
-    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/add",method = RequestMethod.POST, headers="content-type=multipart/form-data")
     @ApiOperation(value = "添加软件")
-    public Result add(@RequestBody Soft soft){
+    public Result add(@RequestParam(value = "file") MultipartFile file,
+                      @RequestParam(value = "pic") MultipartFile pic,
+                      @RequestParam(value = "classifyId") String classifyId,
+                      @RequestParam(value = "introduction") String introduction,
+                      @RequestParam(value = "name") String name){
+        try {
 
-        //上传软件到fastdfs
-        softService.add(soft);
-        return new Result(true,"添加成功",StatusCode.OK);
+
+            //忽略元素为空判断
+            Soft soft = new Soft();
+            soft.setClassifyId(classifyId);
+            soft.setIntroduction(introduction);
+            soft.setName(name);
+
+            //上传软件
+            //获取文件字节数组
+            byte [] uploadFile = file.getBytes();
+            //文件扩展名
+            String extName = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf(".") + 1);
+            //文件链接
+            String url = fastDFSUtil.upload(uploadFile, extName);
+            soft.setUrl(url);
+
+            //上传图片
+            //获取图片字节数组
+            byte [] picFile = pic.getBytes();
+            //文件扩展名
+            String picExtName = pic.getOriginalFilename().substring(pic.getOriginalFilename().lastIndexOf(".") + 1);
+            //文件链接
+            String picUrl = fastDFSUtil.uploadPic(picFile, picExtName);
+            soft.setPic(picUrl);
+
+            //上传软件到fastdfs
+            softService.add(soft);
+            return new Result(true,"添加成功",StatusCode.OK);
+        } catch (IOException e) {
+
+            e.printStackTrace();
+            return new Result(false,"文件上传失败",StatusCode.ERROR);
+        }
+
+
     }
 
     @RequestMapping(value = "/delete/{id}",method = RequestMethod.POST)
