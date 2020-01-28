@@ -25,6 +25,16 @@ public class Comment {
 
     private Date updatetime;
 
+    private String reviewer;
+
+    public String getReviewer() {
+        return reviewer;
+    }
+
+    public void setReviewer(String reviewer) {
+        this.reviewer = reviewer;
+    }
+
     public String getId() {
         return id;
     }
