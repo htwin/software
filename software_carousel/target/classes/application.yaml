@@ -1,8 +1,8 @@
 server:
-  port: 9001
+  port: 9007
 spring:
   application:
-    name: soft-application
+    name: carousel-application
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root

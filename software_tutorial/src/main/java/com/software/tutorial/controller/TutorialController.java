@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/tutorial")
 @Api(tags = "教程模块")
+@CrossOrigin
 public class TutorialController {
 
     @Autowired

@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/software_carousel/src/main/java/com/software/carousel/controller/CarouselController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_carousel/src/main/java/com/software/carousel/dao/CarouselDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_carousel/src/main/java/com/software/carousel/pojo/Carousel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_carousel/src/main/java/com/software/carousel/service/CarouselService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_carousel/target/classes/com/software/carousel/controller/CarouselController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_carousel/target/classes/com/software/carousel/dao/CarouselDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_carousel/target/classes/com/software/carousel/pojo/Carousel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_carousel/target/classes/com/software/carousel/service/CarouselService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_common/src/test/java/com/software/common/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software_common/target/test-classes/com/software/common/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_comment/src/main/java/com/software/comment/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_comment/src/main/java/com/software/comment/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_comment/src/main/java/com/software/comment/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_comment/src/main/java/com/software/comment/dao/CommentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_comment/src/main/java/com/software/comment/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_comment/src/main/java/com/software/comment/pojo/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_comment/src/main/java/com/software/comment/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_comment/src/main/java/com/software/comment/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_comment/target/classes/com/software/comment/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_comment/target/classes/com/software/comment/controller/CommentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_comment/target/classes/com/software/comment/dao/CommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_comment/target/classes/com/software/comment/dao/CommentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_comment/target/classes/com/software/comment/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_comment/target/classes/com/software/comment/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_carousel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_carousel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_carousel/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_carousel/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_carousel/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_carousel/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/controller/TutorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/controller/TutorialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/pojo/Tutorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/pojo/Tutorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/controller/TutorialController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/controller/TutorialController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/pojo/Tutorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/pojo/Tutorial.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,16 +97,29 @@
       <recent name="D:\dev\software_parent\software_tutorial\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommentApplication">
-    <configuration name="ClassifyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.software.classify.ClassifyApplication" />
-      <module name="software_classify" />
+  <component name="RunManager" selected="Spring Boot.CarouselApplication">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.software.common.Test" />
+      <module name="software_common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.software.classify.*" />
+          <option name="PATTERN" value="com.software.common.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarouselApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="software_carousel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.carousel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.carousel.CarouselApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,19 +137,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="software_eureka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.software.eureka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.eureka.EurekaApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="software_manager" />
       <extension name="coverage">
@@ -140,26 +150,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoftApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="software_soft" />
+    <configuration name="TutorialApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="software_tutorial" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.software.soft.*" />
+          <option name="PATTERN" value="com.software.tutorial.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.soft.SoftApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.tutorial.TutorialApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CarouselApplication" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Spring Boot.TutorialApplication" />
         <item itemvalue="Spring Boot.CommentApplication" />
         <item itemvalue="Spring Boot.ManagerApplication" />
-        <item itemvalue="Application.ClassifyApplication" />
-        <item itemvalue="Spring Boot.SoftApplication" />
-        <item itemvalue="Spring Boot.EurekaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +215,7 @@
       <workItem from="1579765337453" duration="5136000" />
       <workItem from="1580003722050" duration="8639000" />
       <workItem from="1580091785147" duration="18870000" />
-      <workItem from="1580177437214" duration="11896000" />
+      <workItem from="1580177437214" duration="16148000" />
     </task>
     <task id="LOCAL-00001" summary="后端搭建以及软件列表实现">
       <created>1578462293070</created>
@@ -284,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580197725136</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="前后端联调 评论列表">
+      <created>1580200117962</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1580200117962</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,13 +355,14 @@
     <MESSAGE value="软件，用户，教程增删改查测试完成" />
     <MESSAGE value="修复文件上传下载的问题" />
     <MESSAGE value="前后端联调，最新软件、热门软件、类别列表、软件详情完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="前后端联调，最新软件、热门软件、类别列表、软件详情完成" />
+    <MESSAGE value="前后端联调 评论列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="前后端联调 评论列表" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1580199963241">
+    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1580204704211">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1580199963241" />
+    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1580204704211" />
     <state x="451" y="228" width="464" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579416599630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -353,10 +371,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="438" y="71" key="#xdebugger.evaluate/0.0.1366.738@0.0.1366.738" timestamp="1580019762224" />
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1580197723338">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1580200116938">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1580197723338" />
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1580200116938" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1579353079486">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -365,38 +383,38 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1580114983041" />
-    <state width="1323" height="174" key="GridCell.Tab.0.bottom" timestamp="1580199974016">
+    <state width="1323" height="117" key="GridCell.Tab.0.bottom" timestamp="1580206057912">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580199974016" />
-    <state width="1323" height="174" key="GridCell.Tab.0.center" timestamp="1580199974016">
+    <state width="1323" height="117" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580206057912" />
+    <state width="1323" height="117" key="GridCell.Tab.0.center" timestamp="1580206057912">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1580199974016" />
-    <state width="1323" height="174" key="GridCell.Tab.0.left" timestamp="1580199974015">
+    <state width="1323" height="117" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1580206057912" />
+    <state width="1323" height="117" key="GridCell.Tab.0.left" timestamp="1580206057912">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1580199974015" />
-    <state width="1323" height="174" key="GridCell.Tab.0.right" timestamp="1580199974016">
+    <state width="1323" height="117" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1580206057912" />
+    <state width="1323" height="117" key="GridCell.Tab.0.right" timestamp="1580206057912">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1580199974016" />
-    <state width="1323" height="174" key="GridCell.Tab.1.bottom" timestamp="1580199974016">
+    <state width="1323" height="117" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1580206057912" />
+    <state width="1323" height="117" key="GridCell.Tab.1.bottom" timestamp="1580206057912">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580199974016" />
-    <state width="1323" height="174" key="GridCell.Tab.1.center" timestamp="1580199974016">
+    <state width="1323" height="117" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580206057912" />
+    <state width="1323" height="117" key="GridCell.Tab.1.center" timestamp="1580206057912">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1580199974016" />
-    <state width="1323" height="174" key="GridCell.Tab.1.left" timestamp="1580199974016">
+    <state width="1323" height="117" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1580206057912" />
+    <state width="1323" height="117" key="GridCell.Tab.1.left" timestamp="1580206057912">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1580199974016" />
-    <state width="1323" height="174" key="GridCell.Tab.1.right" timestamp="1580199974016">
+    <state width="1323" height="117" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1580206057912" />
+    <state width="1323" height="117" key="GridCell.Tab.1.right" timestamp="1580206057912">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1580199974016" />
+    <state width="1323" height="117" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1580206057912" />
     <state width="1323" height="309" key="GridCell.Tab.2.bottom" timestamp="1580182165749">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -421,10 +439,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1578994996648" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1580197731762">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1580200121033">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580197731762" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580200121033" />
     <state x="424" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1579353032094">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
