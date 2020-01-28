@@ -12,3 +12,9 @@ jwt:
   config:
     key: huangtong  #秘钥
     ttl: 360000 #一个小时
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true

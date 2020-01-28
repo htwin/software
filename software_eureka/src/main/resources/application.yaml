@@ -1,0 +1,11 @@
+server:
+  port: 6868
+spring:
+  application:
+    name: software-eureka
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:${server.port}/eureka/

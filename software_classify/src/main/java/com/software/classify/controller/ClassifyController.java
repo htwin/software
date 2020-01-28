@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/classify")
 @Api(tags = "类别接口")
+@CrossOrigin
 public class ClassifyController {
 
     @Autowired

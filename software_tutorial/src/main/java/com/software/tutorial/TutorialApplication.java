@@ -3,11 +3,13 @@ package com.software.tutorial;
 import com.software.common.util.IdWorker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
 import javax.persistence.Id;
 
 @SpringBootApplication
+@EnableEurekaClient
 public class TutorialApplication {
 
     public static void main(String[] args) {

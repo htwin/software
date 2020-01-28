@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.List;
+
 public interface SoftDao extends JpaRepository<Soft,String> {
 
     Page<Soft> findByClassifyId(String classifyId, Pageable pageable);
@@ -20,4 +22,7 @@ public interface SoftDao extends JpaRepository<Soft,String> {
     @Modifying
     @Query(value = "update soft set thumb=thumb+1 where id =?",nativeQuery = true)
     void updateThumb( String id);
+
+
+
 }

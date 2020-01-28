@@ -1,0 +1,32 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: manager-application
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+    instance:
+      prefer-ip-address: true
+zuul:
+  routes:
+    soft-application: #软件
+      path: /soft/** #配置请求URL的请求规则
+      serviceId: soft-application #指定Eureka注册中心中的服务id
+    classify-application: #类别
+      path: /classify/** #配置请求URL的请求规则
+      serviceId: classify-application #指定Eureka注册中心中的服务id
+    comment-application: #评论
+      path: /comment/** #配置请求URL的请求规则
+      serviceId: comment-application #指定Eureka注册中心中的服务id
+    tutorial-application: #教程
+      path: /tutorial/** #配置请求URL的请求规则
+      serviceId: tutorial-application #指定Eureka注册中心中的服务id
+    user-application: #用户
+      path: /user/** #配置请求URL的请求规则
+      serviceId: user-application #指定Eureka注册中心中的服务id
+    admin-application: #管理员
+      path: /admin/** #配置请求URL的请求规则
+      serviceId: admin-application #指定Eureka注册中心中的服务id
+

@@ -3,12 +3,15 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/software_carousel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_classify" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_classify/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_comment" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_comment/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/software_eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/software_manager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_soft" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_soft/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/software_tutorial" charset="UTF-8" />

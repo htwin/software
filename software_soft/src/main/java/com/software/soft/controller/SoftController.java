@@ -23,6 +23,7 @@ import java.io.UnsupportedEncodingException;
 @RestController
 @RequestMapping("/soft")
 @Api(tags = "软件相关接口")
+@CrossOrigin
 public class SoftController {
 
     @Autowired
@@ -34,9 +35,9 @@ public class SoftController {
     @Autowired
     private FastDFSUtil fastDFSUtil;
 
-    @RequestMapping(value = "/download",method = RequestMethod.POST)
+    @RequestMapping(value = "/download",method = RequestMethod.GET)
     @ApiOperation(value = "软件下载")
-    public Result download(@RequestBody Soft soft){
+    public void download(@RequestParam(value = "name") String name,@RequestParam(value = "url") String url){
         //group1-M00/00/00/wKhihF4hZwmAJoXHAAAXA0yMGTo637.png
 
         //下载软件需要登录 user权限
@@ -46,13 +47,18 @@ public class SoftController {
         }*/
 
         try {
+
+            Soft soft = new Soft();
+            soft.setName(name);
+            soft.setUrl(url);
+
             softService.download(soft);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return new Result(true,"下载成功",StatusCode.OK);
+       // return new Result(true,"下载成功",StatusCode.OK);
 
     }
 
@@ -183,5 +189,7 @@ public class SoftController {
         softService.update(soft);
         return new Result(true,"更新成功",StatusCode.OK);
     }
+
+
 
 }
