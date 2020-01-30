@@ -22,13 +22,13 @@ public class CommentController {
     @Autowired
     private CommentService commentService;
 
-    @RequestMapping(value = "/",method = RequestMethod.POST)
+    @RequestMapping(value = "/add",method = RequestMethod.POST)
     @ApiOperation(value = "新增评论")
     public Result addComment(@RequestBody Comment comment){
 
-        commentService.addComment(comment);
+        Comment c = commentService.addComment(comment);
 
-        return new Result(true,"评论成功", StatusCode.OK);
+        return new Result(true,"评论成功", StatusCode.OK,c);
     }
 
     @RequestMapping(value = "/search/{softwareId}/{parentId}/{page}/{size}",method = RequestMethod.GET)

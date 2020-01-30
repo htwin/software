@@ -29,4 +29,7 @@ zuul:
     admin-application: #管理员
       path: /admin/** #配置请求URL的请求规则
       serviceId: admin-application #指定Eureka注册中心中的服务id
+    carousel-application: #轮播图
+      path: /carousel/**
+      serviceId: carousel-application
 

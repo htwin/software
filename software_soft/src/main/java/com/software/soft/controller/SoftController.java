@@ -41,7 +41,7 @@ public class SoftController {
         //group1-M00/00/00/wKhihF4hZwmAJoXHAAAXA0yMGTo637.png
 
         //下载软件需要登录 user权限
-       /* Claims claims = (Claims) request.getAttribute("user_claims");
+        /*Claims claims = (Claims) request.getAttribute("user_claims");
         if(claims == null){
             return new Result(false,"请登录",StatusCode.ERROR);
         }*/

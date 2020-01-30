@@ -19,6 +19,7 @@ import java.util.Map;
 @RestController
 @Api(tags = "用户模块")
 @RequestMapping("/user")
+@CrossOrigin
 public class UserController {
 
 
