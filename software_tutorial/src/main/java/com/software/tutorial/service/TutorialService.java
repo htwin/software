@@ -68,4 +68,7 @@ public class TutorialService {
         return tutorialDao.findAll(pageRequest);
     }
 
+    public Tutorial findById(String id) {
+        return tutorialDao.findById(id).get();
+    }
 }

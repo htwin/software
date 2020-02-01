@@ -19,6 +19,9 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/soft")
@@ -130,7 +133,99 @@ public class SoftController {
         return new Result(true,"点赞成功",StatusCode.OK);
     }
 
-    @RequestMapping(value = "/add",method = RequestMethod.POST, headers="content-type=multipart/form-data")
+    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @ApiOperation(value = "添加软件")
+    public Result add(@RequestBody Soft soft){
+            softService.add(soft);
+
+            return new Result(true,"添加成功",StatusCode.OK);
+    }
+    @RequestMapping(value = "/findNoTutorial",method = RequestMethod.GET)
+    @ApiOperation(value = "查询没有教程的软件")
+    public Result findNoTutorial(){
+        List<Soft> softList = softService.findNoTutorial();
+        return new Result(true,"查询成功",StatusCode.OK,softList);
+    }
+
+    //上传图片
+    @RequestMapping(value = "/uploadPic",method = RequestMethod.POST, headers="content-type=multipart/form-data")
+    public Result uploadPic(@RequestParam(value = "file") MultipartFile file){
+        try {
+            //上传图片
+            //获取图片字节数组
+            byte [] picFile = file.getBytes();
+            //文件扩展名
+            String picExtName = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf(".") + 1);
+            //文件链接
+            String picUrl = fastDFSUtil.uploadPic(picFile, picExtName);
+
+            Map map = new HashMap();
+            map.put("name",file.getOriginalFilename());
+            map.put("url",picUrl);
+
+            return new Result(true,"上传成功",StatusCode.OK,map);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new Result(false,"上传失败",StatusCode.ERROR);
+        }
+
+    }
+
+
+
+    //上传软件
+    @RequestMapping(value = "/uploadFile",method = RequestMethod.POST, headers="content-type=multipart/form-data")
+    public Result uploadFile(@RequestParam(value = "file") MultipartFile file){
+        try {
+            byte [] uploadFile = file.getBytes();
+            //文件扩展名
+            String extName = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf(".") + 1);
+            //文件链接
+            String url = fastDFSUtil.upload(uploadFile, extName);
+
+            Map map = new HashMap();
+            map.put("name",file.getOriginalFilename());
+            map.put("url",url);
+
+            return new Result(true,"上传成功",StatusCode.OK,map);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new Result(false,"上传失败",StatusCode.ERROR);
+        }
+
+    }
+
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.POST)
+    @ApiOperation(value = "根据id删除软件")
+    public Result deleteById(@PathVariable String id){
+        softService.deleteById(id);
+        return new Result(true,"删除成功",StatusCode.OK);
+    }
+
+    @RequestMapping(value = "/update",method = RequestMethod.PUT)
+    @ApiOperation(value = "更新软件")
+    public Result update(@RequestBody Soft soft){
+        softService.update(soft);
+        return new Result(true,"更新成功",StatusCode.OK);
+    }
+
+    //查询用户点赞的软件列表
+    @RequestMapping(value = "/userThumb/{myThumb}",method = RequestMethod.GET)
+    @ApiOperation(value = "查询用户点赞的软件列表")
+    public Result userThumb(@PathVariable String myThumb){
+        List<Soft> softList = softService.userThumb(myThumb);
+        return new Result(true,"查询成功",StatusCode.OK,softList);
+    }
+
+    //查询用户下载过的软件列表
+    @RequestMapping(value = "/userDownload/{myDownload}",method = RequestMethod.GET)
+    @ApiOperation(value = "查询用户点赞的软件列表")
+    public Result userDownload(@PathVariable String myDownload){
+        List<Soft> softList = softService.userDownload(myDownload);
+        return new Result(true,"查询成功",StatusCode.OK,softList);
+    }
+
+    /*@RequestMapping(value = "/add",method = RequestMethod.POST, headers="content-type=multipart/form-data")
     @ApiOperation(value = "添加软件")
     public Result add(@RequestParam(value = "file") MultipartFile file,
                       @RequestParam(value = "pic") MultipartFile pic,
@@ -173,23 +268,6 @@ public class SoftController {
             return new Result(false,"文件上传失败",StatusCode.ERROR);
         }
 
-
-    }
-
-    @RequestMapping(value = "/delete/{id}",method = RequestMethod.POST)
-    @ApiOperation(value = "根据id删除软件")
-    public Result deleteById(@PathVariable String id){
-        softService.deleteById(id);
-        return new Result(true,"删除成功",StatusCode.OK);
-    }
-
-    @RequestMapping(value = "/update",method = RequestMethod.PUT)
-    @ApiOperation(value = "更新软件")
-    public Result update(@RequestBody Soft soft){
-        softService.update(soft);
-        return new Result(true,"更新成功",StatusCode.OK);
-    }
-
-
+    }*/
 
 }

@@ -23,6 +23,7 @@ public interface SoftDao extends JpaRepository<Soft,String> {
     @Query(value = "update soft set thumb=thumb+1 where id =?",nativeQuery = true)
     void updateThumb( String id);
 
-
+    @Query(value = "select * from soft where id not in( select software_id from tutorial)",nativeQuery = true)
+    List<Soft> findNoTutorial();
 
 }

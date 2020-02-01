@@ -28,6 +28,13 @@ public class TutorialController {
         return new Result(true,"执行成功", StatusCode.OK,tutorialService.findBySoftwareId(softwareId));
     }
 
+    @RequestMapping(value = "/findById/{id}",method = RequestMethod.GET)
+    @ApiOperation(value = "根据教程id查询该软件教程信息")
+    @ApiImplicitParam(name = "softwareId",value = "软件id")
+    public Result findById(@PathVariable String id){
+        return new Result(true,"执行成功", StatusCode.OK,tutorialService.findById(id));
+    }
+
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     @ApiOperation(value = "添加教程")
     public Result add(@RequestBody Tutorial tutorial){

@@ -18,6 +18,7 @@ import javax.transaction.Transactional;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -130,5 +131,33 @@ public class SoftService {
         softDao.save(soft);
     }
 
+    //查询没有教程的软件列表
+    public List<Soft> findNoTutorial(){
+        return softDao.findNoTutorial();
+    }
 
+
+    @Transactional
+    public List<Soft> userThumb(String myThumb) {
+
+        String[] ids = myThumb.split(",");
+        List<Soft> softList = new ArrayList<>();
+        for (String id:ids){
+            Soft soft = softDao.findById(id).get();
+            softList.add(soft);
+        }
+        return softList;
+
+    }
+
+    @Transactional
+    public List<Soft> userDownload(String myDownload) {
+        String[] ids = myDownload.split(",");
+        List<Soft> softList = new ArrayList<>();
+        for (String id:ids){
+            Soft soft = softDao.findById(id).get();
+            softList.add(soft);
+        }
+        return softList;
+    }
 }

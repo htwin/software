@@ -14,6 +14,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -43,6 +44,9 @@ public class UserController {
             Map map = new HashMap();
             map.put("token",token);//token
             map.put("name",loginUser.getName());//姓名
+            map.put("id",loginUser.getId());
+            map.put("thumb",loginUser.getThumb());
+            map.put("download",loginUser.getDownload());
             return new Result(true,"登录成功", StatusCode.OK,map);
         }
 
@@ -79,6 +83,14 @@ public class UserController {
         userService.update(user);
         return new Result(true,"修改成功",StatusCode.OK);
     }
+
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    @ApiOperation(value = "根据id查询用户")
+    public Result findById(@PathVariable String id){
+        return new Result(true,"查询成功",StatusCode.OK, userService.findById(id));
+    }
+
+
 
 
 }
