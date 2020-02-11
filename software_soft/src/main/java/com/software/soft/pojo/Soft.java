@@ -22,19 +22,29 @@ public class Soft {
 
     private Integer thumb;
 
+    private Integer hasTutorial;//1有教程 0没有
+
     private String introduction;
 
     private Integer comment;
 
     private String classifyId;
 
-    private Integer ishot;
+    private Integer ishot;//1 热门 0非热门
 
     private String pic;
 
     private Date createtime;
 
     private Date updatetime;
+
+    public Integer getHasTutorial() {
+        return hasTutorial;
+    }
+
+    public void setHasTutorial(Integer hasTutorial) {
+        this.hasTutorial = hasTutorial;
+    }
 
     public String getPic() {
         return pic;

@@ -1,14 +1,26 @@
 package com.software.user.service;
 
+import com.alibaba.fastjson.JSONArray;
+import com.software.common.entity.PageResult;
+import com.software.common.util.CommonUtils;
 import com.software.common.util.IdWorker;
 import com.software.user.dao.UserDao;
+import com.software.user.dao.UserSoftDownloadDao;
+import com.software.user.dao.UserSoftThumbDao;
+import com.software.user.feign.SoftClient;
 import com.software.user.pojo.User;
+import com.software.user.pojo.UserSoftDownload;
+import com.software.user.pojo.UserSoftThumb;
+import com.software.user.pojo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -18,6 +30,15 @@ public class UserService {
 
     @Autowired
     private IdWorker idWorker;
+
+    @Autowired
+    private SoftClient softClient;
+
+    @Autowired
+    private UserSoftDownloadDao userSoftDownloadDao;
+
+    @Autowired
+    private UserSoftThumbDao userSoftThumbDao;
 
     public User findByAccountAndPassword(String account,String password){
 
@@ -57,19 +78,52 @@ public class UserService {
     }
 
     //查询用户列表，可附带条件  (姓名)    user:条件
-    public Page search(int page, int size, User user){
+    public PageResult search(int page, int size, User user) throws Exception {
 
+        int start = (page -1)*size;//开始索引位置，数据库中
         //封装条件   查询
 
+        long total = userDao.count();
+        List<Object[]> objectList = userDao.userList(start, size);
+        List<UserVo> userVos = CommonUtils.castEntity(objectList, UserVo.class);
 
-        //分页查询
-        PageRequest pageRequest = PageRequest.of(page - 1, size);
-        return userDao.findAll(pageRequest);
+        PageResult pageResult = new PageResult(total,userVos);
+
+        return pageResult;
 
 
     }
 
     public User findById(String id) {
         return userDao.findById(id).get();
+    }
+
+    //点赞软件
+    @Transactional
+    public void thumb(String userId,String softId){
+        /*UserSoftDownload userSoftDownload = new UserSoftDownload();
+        userSoftDownload.setSoftId(softId);
+        userSoftDownload.setUserId(userId);*/
+        userSoftThumbDao.add( userId, softId);
+
+        //点赞成功，该软件的点赞数+1，通知soft微服务，，暂时不写
+        softClient.thumb(softId);
+
+    }
+
+    //更新用户下载软件列表
+    @Transactional
+    public void downloads(String userId,String softId){
+
+        UserSoftDownload download = userSoftDownloadDao.findByUserIdAndAndSoftId(userId, softId);
+        if(download == null){
+            userSoftDownloadDao.add(userId,softId);
+        }
+        //通知软件微服务 下载数加一  feign 调用
+        softClient.updateDownload(softId);
+    }
+
+    public UserSoftThumb getUserSoftThu(String userId, String softId) {
+        return userSoftThumbDao.findByUserIdAndAndSoftId(userId,softId);
     }
 }

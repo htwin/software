@@ -19,6 +19,7 @@
         <module>software_carousel</module>
         <module>software_eureka</module>
         <module>software_manager</module>
+        <module>software_college</module>
     </modules>
 
     <packaging>pom</packaging>

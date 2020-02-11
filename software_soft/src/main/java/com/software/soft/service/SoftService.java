@@ -8,9 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
-
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -41,13 +45,29 @@ public class SoftService {
     @Autowired
     private IdWorker idWorker;
 
+
+    private Specification createSpecification(Soft soft){
+       return new Specification<Soft>(){
+            @Override
+            public Predicate toPredicate(Root<Soft> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder cb) {
+                Predicate predicate = null;
+                if(soft.getName()!=null&&!"".equals(soft.getName())){
+                     predicate = cb.like(root.get("name").as(String.class), "%" + soft.getName() + "%");
+                    return cb.and(predicate);
+                }
+                return null;
+
+            }
+        };
+    }
+
     public Page search(int page, int size,Soft soft) {
 
-        //忽略条件查询
-
+        //根据软件名称查询
+        Specification specification = createSpecification(soft);
         Pageable pageable = PageRequest.of(page - 1, size);
 
-        Page<Soft> pages = softDao.findAll(pageable);
+        Page<Soft> pages = softDao.findAll(specification,pageable);
 
         return pages;
 
@@ -105,6 +125,8 @@ public class SoftService {
         out.flush();
         out.close();
 
+
+
     }
 
     public void add(Soft soft){
@@ -116,6 +138,7 @@ public class SoftService {
         soft.setDownload(0);//下载数
         soft.setScore(0);//评分 0
         soft.setThumb(0);//点赞数 0
+        soft.setHasTutorial(0);//没有教程 0
         soft.setCreatetime(new Date());
         soft.setUpdatetime(new Date());
         softDao.save(soft);
@@ -138,26 +161,20 @@ public class SoftService {
 
 
     @Transactional
-    public List<Soft> userThumb(String myThumb) {
+    public List<Soft> userThumb(String userId) {
 
-        String[] ids = myThumb.split(",");
-        List<Soft> softList = new ArrayList<>();
-        for (String id:ids){
-            Soft soft = softDao.findById(id).get();
-            softList.add(soft);
-        }
-        return softList;
+        return softDao.findUserThumb(userId);
 
     }
 
     @Transactional
-    public List<Soft> userDownload(String myDownload) {
-        String[] ids = myDownload.split(",");
-        List<Soft> softList = new ArrayList<>();
-        for (String id:ids){
-            Soft soft = softDao.findById(id).get();
-            softList.add(soft);
-        }
-        return softList;
+    public List<Soft> userDownload(String userId) {
+
+        return softDao.findUserDownload(userId);
+    }
+
+    @Transactional
+    public void updateDownload(String id) {
+        softDao.updateDownload(id);
     }
 }

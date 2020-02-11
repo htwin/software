@@ -27,8 +27,13 @@ public class CommentController {
     public Result addComment(@RequestBody Comment comment){
 
         Comment c = commentService.addComment(comment);
+        if(c != null){
+            return new Result(true,"评论成功", StatusCode.OK,c);
+        }else{
+            return new Result(false,"系统异常，请稍后再试", StatusCode.ERROR);
+        }
 
-        return new Result(true,"评论成功", StatusCode.OK,c);
+
     }
 
     @RequestMapping(value = "/search/{softwareId}/{parentId}/{page}/{size}",method = RequestMethod.GET)

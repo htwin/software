@@ -10,24 +10,22 @@ import java.util.Date;
 public class User {
 
     @Id
-    private String id;
+    public String id;
 
-    private String account;//账号
+    public String account;//账号
 
-    private String name;//姓名
+    public String name;//姓名
 
-    private String password;//密码
+    public String password;//密码
 
-    private int sex;//性别 1男  2女
+    public int sex;//性别 1男  2女
 
-    private int age;//年龄
+    public int age;//年龄
 
-    private String thumb;//点赞的软件列表
+    public String collegeId;
 
-    private String download;//下载的软件列表
-
-    private Date createtime;
-    private Date updatetime;
+    public Date createtime;
+    public Date updatetime;
 
     public String getId() {
         return id;
@@ -77,20 +75,12 @@ public class User {
         this.age = age;
     }
 
-    public String getThumb() {
-        return thumb;
+    public String getCollegeId() {
+        return collegeId;
     }
 
-    public void setThumb(String thumb) {
-        this.thumb = thumb;
-    }
-
-    public String getDownload() {
-        return download;
-    }
-
-    public void setDownload(String download) {
-        this.download = download;
+    public void setCollegeId(String collegeId) {
+        this.collegeId = collegeId;
     }
 
     public Date getCreatetime() {

@@ -32,4 +32,7 @@ zuul:
     carousel-application: #轮播图
       path: /carousel/**
       serviceId: carousel-application
+    college-application: #学院
+      path: /college/**
+      serviceId: college-application
 

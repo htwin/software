@@ -54,7 +54,6 @@ public class SoftController {
             Soft soft = new Soft();
             soft.setName(name);
             soft.setUrl(url);
-
             softService.download(soft);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -64,6 +63,8 @@ public class SoftController {
        // return new Result(true,"下载成功",StatusCode.OK);
 
     }
+
+
 
     @RequestMapping(value = "/search/{page}/{size}",method = RequestMethod.POST)
     @ApiOperation( value = "查询软件列表")
@@ -131,6 +132,14 @@ public class SoftController {
     public Result thumb(@PathVariable String id){
         softService.thumb(id);
         return new Result(true,"点赞成功",StatusCode.OK);
+    }
+
+    @RequestMapping(value = "/updateDownload/{id}",method = RequestMethod.PUT)
+    @ApiOperation(value = "软件的下载数加一")
+    @ApiImplicitParam(name = "id",value = "软件id",required = true)
+    public Result updateDownload(@PathVariable String id){
+        softService.updateDownload(id);
+        return new Result(true,"操作成功",StatusCode.OK);
     }
 
     @RequestMapping(value = "/add",method = RequestMethod.POST)
@@ -210,18 +219,18 @@ public class SoftController {
     }
 
     //查询用户点赞的软件列表
-    @RequestMapping(value = "/userThumb/{myThumb}",method = RequestMethod.GET)
+    @RequestMapping(value = "/userThumb/{userId}",method = RequestMethod.GET)
     @ApiOperation(value = "查询用户点赞的软件列表")
-    public Result userThumb(@PathVariable String myThumb){
-        List<Soft> softList = softService.userThumb(myThumb);
+    public Result userThumb(@PathVariable String userId){
+        List<Soft> softList = softService.userThumb(userId);
         return new Result(true,"查询成功",StatusCode.OK,softList);
     }
 
     //查询用户下载过的软件列表
-    @RequestMapping(value = "/userDownload/{myDownload}",method = RequestMethod.GET)
-    @ApiOperation(value = "查询用户点赞的软件列表")
-    public Result userDownload(@PathVariable String myDownload){
-        List<Soft> softList = softService.userDownload(myDownload);
+    @RequestMapping(value = "/userDownload/{userId}",method = RequestMethod.GET)
+    @ApiOperation(value = "查询用户下载的软件列表")
+    public Result userDownload(@PathVariable String userId){
+        List<Soft> softList = softService.userDownload(userId);
         return new Result(true,"查询成功",StatusCode.OK,softList);
     }
 

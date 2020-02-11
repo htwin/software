@@ -25,9 +25,12 @@ public class CommentService {
         comment.setId(idWorker.nextId()+"");
         comment.setCreatetime(new Date());
         comment.setUpdatetime(new Date());
+        Comment comment1 = commentDao.save(comment);
+        if(comment1 != null){
+            //通知软件微服务   评论数加一  后期优化
+        }
+        return comment1;
 
-
-        return commentDao.save(comment);
     }
 
     public Page search(String softwareId,String parentId,int page,int size){

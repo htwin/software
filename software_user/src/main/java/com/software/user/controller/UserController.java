@@ -4,6 +4,7 @@ import com.software.common.entity.PageResult;
 import com.software.common.entity.Result;
 import com.software.common.entity.StatusCode;
 import com.software.common.util.JwtUtil;
+import com.software.user.pojo.*;
 import com.software.user.pojo.User;
 import com.software.user.service.UserService;
 import io.swagger.annotations.Api;
@@ -45,22 +46,52 @@ public class UserController {
             map.put("token",token);//token
             map.put("name",loginUser.getName());//姓名
             map.put("id",loginUser.getId());
-            map.put("thumb",loginUser.getThumb());
-            map.put("download",loginUser.getDownload());
             return new Result(true,"登录成功", StatusCode.OK,map);
         }
 
         return new Result(false,"用户名或密码错误", StatusCode.ERROR);
     }
 
+
+    /*@RequestMapping(value = "/thumb/{thumbs}/{id}",method = RequestMethod.PUT)
+    @ApiOperation(value = "点赞软件")
+    public Result thumb(@PathVariable String thumbs,@PathVariable String id){
+        userService.thumb(thumbs,id);
+        return new Result(true,"点赞成功",StatusCode.OK);
+    }*/
+
+    @RequestMapping(value = "/thumb/{userId}/{softId}",method = RequestMethod.POST)
+    @ApiOperation(value = "点赞软件")
+    public Result thumb(@PathVariable String userId,@PathVariable String softId){
+        userService.thumb(userId,softId);
+        return new Result(true,"点赞成功",StatusCode.OK);
+    }
+
+    @RequestMapping(value = "/getUserSoftThu/{userId}/{softId}",method = RequestMethod.GET)
+    @ApiOperation(value = "根据用户id和软件id获取实体对象")
+    public Result getUserSoftThu(@PathVariable String userId,@PathVariable String softId){
+        UserSoftThumb realEntity = userService.getUserSoftThu(userId,softId);
+        return new Result(true,"获取成功",StatusCode.OK,realEntity);
+    }
+
+    @RequestMapping(value = "/downloads/{userId}/{softId}",method = RequestMethod.POST)
+    @ApiOperation(value = "更新用户下载软件列表")
+    public Result downloads(@PathVariable String userId,@PathVariable String softId){
+        userService.downloads(userId,softId);
+        return new Result(true,"下载成功",StatusCode.OK);
+    }
+
     @RequestMapping(value = "/search/{page}/{size}",method = RequestMethod.POST)
     @ApiOperation(value = "用户列表")
     public Result search(@PathVariable int page,@PathVariable int size,@RequestBody User user){
-        Page pageResult = userService.search(page, size, user);
+        try {
+            PageResult pageResult = userService.search(page, size, user);
+            return new Result(true,"查询成功",StatusCode.OK,pageResult);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(false,"系统异常",StatusCode.ERROR);
+        }
 
-
-
-        return new Result(true,"查询成功",StatusCode.OK,new PageResult<>(pageResult.getTotalElements(),pageResult.getContent()));
     }
 
     @RequestMapping(value = "/add",method = RequestMethod.POST)
