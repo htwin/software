@@ -15,9 +15,14 @@ import com.software.user.pojo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.List;
@@ -77,18 +82,36 @@ public class UserService {
         userDao.save(user);
     }
 
+    private Specification createSpecification(User user){
+        return new Specification<User>(){
+            @Override
+            public Predicate toPredicate(Root<User> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder cb) {
+                Predicate predicate = null;
+                if(user.getCollegeId()!=null&&!"".equals(user.getCollegeId())){
+                    predicate = cb.equal(root.get("collegeId").as(String.class),user.getCollegeId());
+                    return cb.and(predicate);
+                }
+                return null;
+            }
+        };
+    }
+
     //查询用户列表，可附带条件  (姓名)    user:条件
     public PageResult search(int page, int size, User user) throws Exception {
+
+        List<Object[]> objectList = null;
 
         int start = (page -1)*size;//开始索引位置，数据库中
         //封装条件   查询
 
-        long total = userDao.count();
-        List<Object[]> objectList = userDao.userList(start, size);
+        long total = userDao.count();//总数
+        if(user.getCollegeId()!=null&&!"".equals(user.getCollegeId())){
+            objectList = userDao.userListWithCollegeId(user.getCollegeId(),start,size);
+        }else{
+            objectList = userDao.userList(start, size);
+        }
         List<UserVo> userVos = CommonUtils.castEntity(objectList, UserVo.class);
-
         PageResult pageResult = new PageResult(total,userVos);
-
         return pageResult;
 
 
@@ -101,9 +124,7 @@ public class UserService {
     //点赞软件
     @Transactional
     public void thumb(String userId,String softId){
-        /*UserSoftDownload userSoftDownload = new UserSoftDownload();
-        userSoftDownload.setSoftId(softId);
-        userSoftDownload.setUserId(userId);*/
+
         userSoftThumbDao.add( userId, softId);
 
         //点赞成功，该软件的点赞数+1，通知soft微服务，，暂时不写

@@ -2,9 +2,11 @@ package com.software.user.dao;
 
 import com.software.user.pojo.User;
 import com.software.user.pojo.UserVo;
+import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -25,6 +27,9 @@ public interface UserDao extends JpaRepository<User,String> {
 
     @Query(value = "select u.id,u.account,u.name,u.sex,u.age,u.createtime,u.updatetime,c.name collegeName from user u,college c where u.college_id = c.id order by u.updatetime desc limit ?,?",nativeQuery = true)
     List<Object[]> userList(int start, int size);
+
+    @Query(value = "select u.id,u.account,u.name,u.sex,u.age,u.createtime,u.updatetime,c.name collegeName from user u,college c where u.college_id = c.id and u.college_id=? order by u.updatetime desc limit ?,?",nativeQuery = true)
+    List<Object[]> userListWithCollegeId(String collegeId,int start, int size);
 
 
 }

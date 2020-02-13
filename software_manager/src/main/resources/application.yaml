@@ -35,4 +35,7 @@ zuul:
     college-application: #学院
       path: /college/**
       serviceId: college-application
+    statistics-application: #统计
+      path: /statistics/**
+      serviceId: statistics-application
 

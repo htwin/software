@@ -1,0 +1,19 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: statistics-application
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/software?characterEncoding=utf-8
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true
+mybatis:
+  type-aliases-package: com.software.statistics.pojo
+  mapper-locations: classpath:mapper/*Mapper.xml

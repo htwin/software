@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.software.statistics.mapper.StatisticsMapper">
+    <select id="collegeNameAndDownload" resultType="CollegeVo">
+        select user_college.name,count(*) download
+        from
+        user_soft_download usd,
+        (select u.id,c.name from college c,user u where u.college_id = c.id) as user_college
+        WHERE usd.user_id = user_college.id GROUP BY(user_college.name)
+    </select>
+    <select id="softNameAndDownload" resultType="SoftVo">
+        select name,download from soft order by download desc
+    </select>
+</mapper>

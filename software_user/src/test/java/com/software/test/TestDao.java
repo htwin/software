@@ -5,14 +5,20 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.software.user.UserApplication;
 import com.software.user.dao.UserDao;
+import com.software.user.pojo.User;
 import com.software.user.pojo.UserVo;
 import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,9 +30,24 @@ public class TestDao {
 
     @Autowired
     private UserDao userDao;
-
+    private Specification createSpecification(User user){
+        return new Specification<User>(){
+            @Override
+            public Predicate toPredicate(Root<User> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder cb) {
+                Predicate predicate = null;
+                if(user.getCollegeId()!=null&&!"".equals(user.getCollegeId())){
+                    predicate = cb.equal(root.get("collegeId").as(String.class),user.getCollegeId());
+                    return cb.and(predicate);
+                }
+                return null;
+            }
+        };
+    }
     @Test
     public void test() throws Exception {
+        User user = new User();
+        user.setCollegeId("1");
+        Specification specification = createSpecification(user);
         List<Object[]> userVos = userDao.userList(0, 2);
         List<UserVo> userVos1 = castEntity(userVos, UserVo.class);
         System.out.println(userVos1);
