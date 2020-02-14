@@ -101,7 +101,7 @@ public class SoftService {
         softDao.updateThumb(id);
     }
 
-    public void download(@RequestBody Soft soft) throws IOException {
+    public void download(Soft soft) throws IOException {
         //group1-M00/00/00/wKhihF4hZwmAJoXHAAAXA0yMGTo637.png
         String[] fileId = soft.getUrl().split("-");
 

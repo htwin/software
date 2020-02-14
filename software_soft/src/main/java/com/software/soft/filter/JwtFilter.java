@@ -9,6 +9,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Enumeration;
 
 @Component
 public class JwtFilter extends HandlerInterceptorAdapter {
@@ -21,8 +22,8 @@ public class JwtFilter extends HandlerInterceptorAdapter {
 
         //规定请求头带有authorization  token存放在请求头中
         //不允许改变
-        final String requestHeader = request.getHeader("Authorization");
-
+        final String requestHeader = request.getHeader("token");
+        Enumeration<String> headerNames = request.getHeaderNames();
         //规定 以bearer开头
         if(requestHeader!=null && requestHeader.startsWith("Bearer ")){
             //获取token
@@ -46,8 +47,6 @@ public class JwtFilter extends HandlerInterceptorAdapter {
             }
 
         }
-
-
 
         return true;
     }

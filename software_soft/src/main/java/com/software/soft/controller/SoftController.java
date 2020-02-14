@@ -40,14 +40,14 @@ public class SoftController {
 
     @RequestMapping(value = "/download",method = RequestMethod.GET)
     @ApiOperation(value = "软件下载")
-    public void download(@RequestParam(value = "name") String name,@RequestParam(value = "url") String url){
+    public void download(@RequestParam(value = "name") String name,@RequestParam(value = "url") String url) throws Exception {
         //group1-M00/00/00/wKhihF4hZwmAJoXHAAAXA0yMGTo637.png
 
         //下载软件需要登录 user权限
-        /*Claims claims = (Claims) request.getAttribute("user_claims");
+        Claims claims = (Claims) request.getAttribute("user_claims");
         if(claims == null){
-            return new Result(false,"请登录",StatusCode.ERROR);
-        }*/
+           throw new Exception("请登录");
+        }
 
         try {
 

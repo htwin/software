@@ -6,8 +6,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: Huangtong1998...
-    url: jdbc:mysql://47.102.120.6:3306/software?characterEncoding=utf-8
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/software?characterEncoding=utf-8
 jwt:
   config:
     key: huangtong  #秘钥
