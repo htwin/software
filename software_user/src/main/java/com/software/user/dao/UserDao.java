@@ -25,11 +25,7 @@ public interface UserDao extends JpaRepository<User,String> {
     @Query(value = "update User set User.download = ?1 where User.id = ?2",nativeQuery = true)
     void downloads(String downloads,String id);
 
-    @Query(value = "select u.id,u.account,u.name,u.sex,u.age,u.createtime,u.updatetime,c.name collegeName from user u,college c where u.college_id = c.id order by u.updatetime desc limit ?,?",nativeQuery = true)
-    List<Object[]> userList(int start, int size);
 
-    @Query(value = "select u.id,u.account,u.name,u.sex,u.age,u.createtime,u.updatetime,c.name collegeName from user u,college c where u.college_id = c.id and u.college_id=? order by u.updatetime desc limit ?,?",nativeQuery = true)
-    List<Object[]> userListWithCollegeId(String collegeId,int start, int size);
 
 
 }

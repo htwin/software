@@ -93,7 +93,8 @@ public class SoftService {
     }
 
     public Soft findById(String id) {
-        return softDao.findById(id).get();
+        Soft soft = softDao.findById(id).get();
+        return soft;
     }
 
     @Transactional
@@ -176,5 +177,10 @@ public class SoftService {
     @Transactional
     public void updateDownload(String id) {
         softDao.updateDownload(id);
+    }
+
+    @Transactional
+    public void updateTutorial(int tutorial,String id){
+        softDao.updateTutorial(tutorial,id);
     }
 }

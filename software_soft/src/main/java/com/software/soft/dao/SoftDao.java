@@ -35,4 +35,8 @@ public interface SoftDao extends JpaRepository<Soft,String>,JpaSpecificationExec
 
     @Query(value = "select * from soft where id in (select soft_id from user_soft_thumb where user_id = ?)",nativeQuery = true)
     List<Soft> findUserThumb(String userId);
+
+    @Modifying
+    @Query(value = "update soft set has_tutorial =?1 where id = ?2",nativeQuery = true)
+    void updateTutorial(int tutorial,String id);
 }

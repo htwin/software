@@ -5,8 +5,12 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.software.user.UserApplication;
 import com.software.user.dao.UserDao;
+import com.software.user.dao.UserSoftDownloadDao;
+import com.software.user.mapper.UserMapper;
 import com.software.user.pojo.User;
+import com.software.user.pojo.UserSoftDownload;
 import com.software.user.pojo.UserVo;
+import com.software.user.service.UserService;
 import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,8 +23,10 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -30,6 +36,12 @@ public class TestDao {
 
     @Autowired
     private UserDao userDao;
+
+    @Autowired
+    private UserSoftDownloadDao userSoftDownloadDao;
+
+    @Autowired
+    private UserMapper userMapper;
     private Specification createSpecification(User user){
         return new Specification<User>(){
             @Override
@@ -43,15 +55,42 @@ public class TestDao {
             }
         };
     }
+
     @Test
-    public void test() throws Exception {
+    public void testMybatis(){
         User user = new User();
-        user.setCollegeId("1");
-        Specification specification = createSpecification(user);
-        List<Object[]> userVos = userDao.userList(0, 2);
-        List<UserVo> userVos1 = castEntity(userVos, UserVo.class);
-        System.out.println(userVos1);
+        user.setCollegeId("2");
+        long total = userMapper.total(user);
+        List<UserVo> search = userMapper.search(0, 10,user);
+        System.out.println(search);
     }
+
+    @Test
+    @Transactional
+    public void testAdd(){
+        //userSoftDownloadDao.add("1230","123");
+    }
+
+    @Test
+    public void testAc(){
+        int studentNum = 1;
+        String newStudentNum = String.format("%04d",studentNum);
+        System.out.println(newStudentNum);
+    }
+
+    @Autowired
+    private UserService userService;
+
+    @Test
+    public void update(){
+        User user = new User();
+        user.setId("1227112736304009216");
+        user.setAccount("123123");
+        user.setName("修改");
+        User save = userDao.save(user);
+        System.out.println(save);
+    }
+
     //转换实体类
     public static <T> List<T> castEntity(List<Object[]> list, Class<T> clazz) throws Exception {
         List<T> returnList = new ArrayList<T>();

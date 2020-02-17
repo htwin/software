@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.software.user.mapper.UserMapper">
+    <select id="search" resultType="UserVo">
+        select
+        u.id,u.account,u.name,u.sex,u.age,u.createtime,u.updatetime,c.name collegeName,u.college_id collegeId
+        from user u,college c
+        where u.college_id = c.id
+        <if test="user.name!=null and user.name!=''">
+            and u.name like '%${user.name}%'
+        </if>
+        <if test="user.collegeId!=null and user.collegeId!=''">
+            and u.college_id = #{user.collegeId}
+        </if>
+        order by u.updatetime desc
+        limit #{page},#{size}
+    </select>
+    <select id="total" resultType="long">
+        select count(*) from user u
+        <where>
+            <if test="user.collegeId!=null and user.collegeId!=''">
+                u.college_id = #{user.collegeId}
+            </if>
+            <if test="user.name!=null and user.name!=''">
+                and u.name like '%${user.name}%'
+            </if>
+        </where>
+    </select>
+    <update id="update">
+        update user u set
+        u.account = #{user.account},
+        u.name = #{user.name},
+        u.sex = #{user.sex},
+        u.age = #{user.age},
+        u.college_id = #{user.collegeId},
+        u.updatetime = #{user.updatetime}
+        where
+        u.id = ${user.id}
+
+    </update>
+</mapper>

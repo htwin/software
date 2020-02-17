@@ -8,7 +8,10 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://127.0.0.1:3306/software?characterEncoding=utf-8
-
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
 eureka:
   client:
     service-url:
@@ -19,6 +22,6 @@ eureka:
 jwt:
   config:
     key: huangtong  #秘钥
-    ttl: 3600000 #一个小时60 60 3600000
+    ttl: 3600000 #一个小时60 60 3600000 60*60*1000
 fastdf:
   ip: http://192.168.98.132/

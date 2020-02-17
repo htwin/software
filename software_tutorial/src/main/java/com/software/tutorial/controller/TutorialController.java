@@ -73,8 +73,8 @@ public class TutorialController {
     @RequestMapping(value = "/search/{page}/{size}",method = RequestMethod.POST)
     @ApiOperation(value = "教程教程==列表")
     public Result search(@PathVariable int page,@PathVariable int size,@RequestBody Tutorial tutorial){
-        Page pageResult = tutorialService.search(page, size, tutorial);
-        return new Result(true,"查询成功",StatusCode.OK,new PageResult<>(pageResult.getTotalElements(),pageResult.getContent()));
+
+        return new Result(true,"查询成功",StatusCode.OK,tutorialService.search(page, size, tutorial));
     }
 
 

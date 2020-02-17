@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableZuulProxy
-@CrossOrigin
 public class ManagerApplication {
 
     public static void main(String[] args) {

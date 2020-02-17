@@ -26,7 +26,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/soft")
 @Api(tags = "软件相关接口")
-@CrossOrigin
+@CrossOrigin(allowCredentials="true",maxAge = 3600)
 public class SoftController {
 
     @Autowired
@@ -123,7 +123,8 @@ public class SoftController {
     @ApiOperation(value = "通过id查询软件详情")
     @ApiImplicitParam(name = "id",value = "软件id",required = true)
     public Result findById(@PathVariable String id){
-        return new Result(true,"执行成功",StatusCode.OK,softService.findById(id));
+        Soft soft = softService.findById(id);
+        return new Result(true,"执行成功",StatusCode.OK,soft);
     }
 
     @RequestMapping(value = "/thumb/{id}",method = RequestMethod.PUT)
@@ -232,6 +233,13 @@ public class SoftController {
     public Result userDownload(@PathVariable String userId){
         List<Soft> softList = softService.userDownload(userId);
         return new Result(true,"查询成功",StatusCode.OK,softList);
+    }
+
+    //修改是否有教程字段
+    @RequestMapping(value = "/updateTutorial/{tutorial}/{id}",method = RequestMethod.PUT)
+    @ApiOperation(value = "查询用户下载的软件列表")
+    public void updateTutorial(@PathVariable int tutorial,@PathVariable String id){
+        softService.updateTutorial(tutorial,id);
     }
 
     /*@RequestMapping(value = "/add",method = RequestMethod.POST, headers="content-type=multipart/form-data")

@@ -23,7 +23,7 @@ public class JwtFilter extends HandlerInterceptorAdapter {
         //规定请求头带有authorization  token存放在请求头中
         //不允许改变
         final String requestHeader = request.getHeader("token");
-        Enumeration<String> headerNames = request.getHeaderNames();
+        System.out.println("requestHeader:"+requestHeader);
         //规定 以bearer开头
         if(requestHeader!=null && requestHeader.startsWith("Bearer ")){
             //获取token

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.software.tutorial.mapper.TutorialMapper">
+    <select id="findAll" resultType="TutorialVo">
+        select
+        t.id,s.name softName,t.createtime,t.updatetime
+        from
+        tutorial t,soft s
+        where t.software_id = s.id
+        order by updatetime desc
+        limit #{page},#{size}
+    </select>
+
+    <select id="findBySoftwareId" resultType="TutorialVo">
+        select
+        t.id,t.content,t.video,s.name softName,t.createtime,t.updatetime
+        from
+        tutorial t,soft s
+        where t.software_id = s.id and t.software_id=${softwareId}
+    </select>
+</mapper>

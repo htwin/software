@@ -11,10 +11,13 @@ spring:
 jwt:
   config:
     key: huangtong  #秘钥
-    ttl: 360000 #一个小时
+    ttl: 3600000 #一个小时3600000
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:6868/eureka
   instance:
     prefer-ip-address: true
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.software.user.pojo

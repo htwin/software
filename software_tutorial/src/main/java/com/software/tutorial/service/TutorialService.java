@@ -1,8 +1,12 @@
 package com.software.tutorial.service;
 
+import com.software.common.entity.PageResult;
 import com.software.common.util.IdWorker;
 import com.software.tutorial.dao.TutorialDao;
+import com.software.tutorial.feign.SoftClient;
+import com.software.tutorial.mapper.TutorialMapper;
 import com.software.tutorial.pojo.Tutorial;
+import com.software.tutorial.pojo.TutorialVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -10,9 +14,13 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class TutorialService {
+
+    @Autowired
+    private TutorialMapper tutorialMapper;
 
     @Autowired
     private TutorialDao tutorialDao;
@@ -20,8 +28,11 @@ public class TutorialService {
     @Autowired
     private IdWorker idWorker;
 
-    public Tutorial findBySoftwareId(String softwareId){
-        return tutorialDao.findBySoftwareId(softwareId);
+    @Autowired
+    private SoftClient softClient;
+
+    public TutorialVo findBySoftwareId(String softwareId){
+        return tutorialMapper.findBySoftwareId(softwareId);
     }
 
     //添加教程
@@ -39,19 +50,34 @@ public class TutorialService {
         tutorial.setCreatetime(new Date());
         tutorial.setUpdatetime(new Date());
 
-        tutorialDao.save(tutorial);
+        Tutorial tutorial1 = tutorialDao.save(tutorial);
+
+        softClient.updateTutorial(1,tutorial.getSoftwareId());
+
         return true;
     }
 
     //根据教程id删除教程
     public void deleteById(String id){
+        Tutorial tutorial = tutorialDao.findById(id).get();
+
+
+
         tutorialDao.deleteById(id);
+
+        //删除教程后设置该软件无教程
+        softClient.updateTutorial(0,tutorial.getSoftwareId());
     }
 
     //根据软件id删除教程
     @Transactional
     public void deleteBySoftwareId(String softwareId){
+
         tutorialDao.deleteBySoftwareId(softwareId);
+
+        //修改软件改为无教程
+        softClient.updateTutorial(0,softwareId);
+
     }
 
     //修改教程
@@ -61,11 +87,16 @@ public class TutorialService {
     }
 
     //查询教程列表
-    public Page search(int page,int size,Tutorial tutorial){
+    public PageResult search(int page,int size,Tutorial tutorial){
 
-        PageRequest pageRequest = PageRequest.of(page - 1, size);
+        int start = (page-1)*size;
+        long total = tutorialDao.count();
 
-        return tutorialDao.findAll(pageRequest);
+        List<TutorialVo> tutorialVos = tutorialMapper.findAll(start, size);
+
+        return new PageResult<>(total, tutorialVos);
+
+
     }
 
     public Tutorial findById(String id) {

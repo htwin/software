@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: manager-application
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
 eureka:
   client:
     service-url:

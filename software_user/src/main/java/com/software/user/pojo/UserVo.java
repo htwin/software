@@ -21,29 +21,18 @@ public class UserVo {
     private Date createtime;
     private Date updatetime;
 
-
-
     private String collegeName;//学院名称
+    private String collegeId;//学院id
 
 
 
-    public UserVo() {
+    public String getCollegeId() {
+        return collegeId;
     }
 
-    public UserVo(String id, String account, String name, Integer sex, Integer age, Timestamp createtime, Timestamp updatetime, String collegeName) {
-        this.id = id;
-        this.account = account;
-        this.name = name;
-        this.sex = sex;
-        this.age = age;
-        this.createtime = createtime;
-        this.updatetime = updatetime;
-        this.collegeName = collegeName;
+    public void setCollegeId(String collegeId) {
+        this.collegeId = collegeId;
     }
-
-
-
-
 
     public String getId() {
         return id;
