@@ -14,6 +14,10 @@ import com.software.user.pojo.User;
 import com.software.user.pojo.UserSoftDownload;
 import com.software.user.pojo.UserSoftThumb;
 import com.software.user.pojo.UserVo;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -21,12 +25,16 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -161,5 +169,80 @@ public class UserService {
 
     public UserSoftThumb getUserSoftThu(String userId, String softId) {
         return userSoftThumbDao.findByUserIdAndAndSoftId(userId,softId);
+    }
+    //批量导入用户
+
+    public void importUsers(MultipartFile file) throws IOException {
+        List<User> list = new ArrayList<>();
+
+        InputStream in = file.getInputStream();
+
+        HSSFWorkbook workbook = new HSSFWorkbook(in);
+
+        HSSFSheet sheet = workbook.getSheetAt(0);
+
+        for(Row row : sheet){
+            if(row.getRowNum()==0)continue;
+            short lastCellNum = row.getLastCellNum();
+
+            User user = new User();
+
+            user.setId(idWorker.nextId()+"");
+            user.setCreatetime(new Date());
+            user.setUpdatetime(new Date());
+
+            for(int i = 0;i<lastCellNum;i++){
+                row.getCell(i).setCellType(Cell.CELL_TYPE_STRING);
+                String value = row.getCell(i).getStringCellValue();
+                if(i==0){
+                    if("信工学院".equals(value)||"信息工程学院".equals(value)){
+                        user.setCollegeId("1");
+                    }
+                    if("外语学院".equals(value)||"外国语学院".equals(value)){
+                        user.setCollegeId("2");
+                    }
+                    if("环境学院".equals(value)){
+                        user.setCollegeId("3");
+                    }
+                    if("文学院".equals(value)){
+                        user.setCollegeId("4");
+                    }
+                    if("数理学院".equals(value)){
+                        user.setCollegeId("5");
+                    }
+                    if("传媒学院".equals(value)){
+                        user.setCollegeId("6");
+                    }
+                    if("生科学院".equals(value)){
+                        user.setCollegeId("7");
+                    }
+                    if("机电学院".equals(value)){
+                        user.setCollegeId("8");
+                    }
+                    if("马克思学院".equals(value)){
+                        user.setCollegeId("9");
+                    }
+                    if("音乐学院".equals(value)){
+                        user.setCollegeId("10");
+                    }
+                }
+                if(i==1){
+                    user.setAccount(value);
+                    user.setPassword(encode.encode(value));
+                }
+                if(i==2){
+                    user.setName(value);
+                }
+                if(i==3){
+                    user.setAge(Integer.parseInt(value));
+                }
+                if(i==4){
+                    user.setSex("男".equals(value)?1:0);
+                }
+            }
+            list.add(user);
+        }
+
+        userDao.saveAll(list);
     }
 }

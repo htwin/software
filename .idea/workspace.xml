@@ -2,61 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_admin/src/main/java/com/software/admin/AdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_admin/src/main/java/com/software/admin/AdminApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_admin/src/main/java/com/software/admin/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_admin/src/main/java/com/software/admin/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_admin/target/classes/com/software/admin/AdminApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_admin/target/classes/com/software/admin/AdminApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_admin/target/classes/com/software/admin/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_admin/target/classes/com/software/admin/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_common/src/test/java/com/software/common/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_common/src/test/java/com/software/common/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_common/target/test-classes/com/software/common/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_common/target/test-classes/com/software/common/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_manager/src/main/java/com/software/manager/ManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_manager/src/main/java/com/software/manager/ManagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_manager/src/main/java/com/software/manager/config/MyConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_manager/src/main/java/com/software/manager/filter/ManagerFilter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/software_manager/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_manager/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_manager/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_manager/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_manager/target/classes/com/software/manager/ManagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_manager/target/classes/com/software/manager/ManagerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_manager/target/classes/com/software/manager/config/MyConfiguration$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_manager/target/classes/com/software/manager/config/MyConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_manager/target/classes/com/software/manager/filter/ManagerFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/dao/SoftDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/dao/SoftDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/filter/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/filter/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/dao/SoftDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/dao/SoftDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/filter/JwtFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/filter/JwtFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/TutorialApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/TutorialApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/controller/TutorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/controller/TutorialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/pojo/Tutorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/pojo/Tutorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/service/TutorialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/java/com/software/tutorial/service/TutorialService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/TutorialApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/TutorialApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/controller/TutorialController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/controller/TutorialController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/pojo/Tutorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/pojo/Tutorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/service/TutorialService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_tutorial/target/classes/com/software/tutorial/service/TutorialService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/dao/UserSoftDownloadDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/dao/UserSoftDownloadDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/pojo/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/pojo/UserVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/test/java/com/software/test/TestDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/test/java/com/software/test/TestDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/UserApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/dao/UserSoftDownloadDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/dao/UserSoftDownloadDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/pojo/UserVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/pojo/UserVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/test-classes/com/software/test/TestDao$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/test-classes/com/software/test/TestDao$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/test-classes/com/software/test/TestDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/test-classes/com/software/test/TestDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +97,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.ManagerApplication">
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="software_admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.software.admin.AdminApplication" />
@@ -329,6 +284,10 @@
       <workItem from="1581756011468" duration="7536000" />
       <workItem from="1581813983646" duration="13980000" />
       <workItem from="1581901057293" duration="1123000" />
+      <workItem from="1581908996418" duration="1878000" />
+      <workItem from="1581985403908" duration="582000" />
+      <workItem from="1582243461110" duration="9305000" />
+      <workItem from="1582331142449" duration="574000" />
     </task>
     <task id="LOCAL-00001" summary="后端搭建以及软件列表实现">
       <created>1578462293070</created>
@@ -456,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581668873667</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="毕业设计第二版完成">
+      <created>1581909065882</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1581909065882</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,13 +483,18 @@
     <MESSAGE value="改造，多表关联查询，添加学院" />
     <MESSAGE value="数据中心，各学院统计、软件下载统计完成" />
     <MESSAGE value="后端权限校验，管理员登录前后端联调完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端权限校验，管理员登录前后端联调完成" />
+    <MESSAGE value="毕业设计第二版完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="毕业设计第二版完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="28" key="#Project_Structure" timestamp="1581669674560">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="28" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1581669674560" />
+    <state x="413" y="124" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582248134082">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="124" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1582248134082" />
     <state x="11" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581814203461">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -548,10 +519,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="438" y="71" key="#xdebugger.evaluate/0.0.1366.738@0.0.1366.738" timestamp="1581734233153" />
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1581668872402">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1581909063604">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1581668872402" />
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1581909063604" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1579353079486">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -560,54 +531,54 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1580114983041" />
-    <state width="905" height="439" key="GridCell.Tab.0.bottom" timestamp="1581844774195">
+    <state width="905" height="580" key="GridCell.Tab.0.bottom" timestamp="1582292561951">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="439" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581844774195" />
-    <state width="905" height="439" key="GridCell.Tab.0.center" timestamp="1581844774195">
+    <state width="905" height="580" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1582292561951" />
+    <state width="905" height="580" key="GridCell.Tab.0.center" timestamp="1582292561951">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="439" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1581844774195" />
-    <state width="905" height="439" key="GridCell.Tab.0.left" timestamp="1581844774195">
+    <state width="905" height="580" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1582292561951" />
+    <state width="905" height="580" key="GridCell.Tab.0.left" timestamp="1582292561951">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="439" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1581844774195" />
-    <state width="905" height="439" key="GridCell.Tab.0.right" timestamp="1581844774195">
+    <state width="905" height="580" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1582292561951" />
+    <state width="905" height="580" key="GridCell.Tab.0.right" timestamp="1582292561951">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="439" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1581844774195" />
-    <state width="905" height="439" key="GridCell.Tab.1.bottom" timestamp="1581844774195">
+    <state width="905" height="580" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1582292561951" />
+    <state width="905" height="580" key="GridCell.Tab.1.bottom" timestamp="1582292561951">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="439" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581844774195" />
-    <state width="905" height="439" key="GridCell.Tab.1.center" timestamp="1581844774195">
+    <state width="905" height="580" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1582292561951" />
+    <state width="905" height="580" key="GridCell.Tab.1.center" timestamp="1582292561951">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="439" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1581844774195" />
-    <state width="905" height="439" key="GridCell.Tab.1.left" timestamp="1581844774195">
+    <state width="905" height="580" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1582292561951" />
+    <state width="905" height="580" key="GridCell.Tab.1.left" timestamp="1582292561951">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="439" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1581844774195" />
-    <state width="905" height="439" key="GridCell.Tab.1.right" timestamp="1581844774195">
+    <state width="905" height="580" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1582292561951" />
+    <state width="905" height="580" key="GridCell.Tab.1.right" timestamp="1582292561951">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="439" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1581844774195" />
-    <state width="905" height="189" key="GridCell.Tab.2.bottom" timestamp="1581842049132">
+    <state width="905" height="580" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1582292561951" />
+    <state width="905" height="277" key="GridCell.Tab.2.bottom" timestamp="1582269402816">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="189" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581842049132" />
-    <state width="905" height="189" key="GridCell.Tab.2.center" timestamp="1581842049132">
+    <state width="905" height="277" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1582269402816" />
+    <state width="905" height="277" key="GridCell.Tab.2.center" timestamp="1582269402816">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="189" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1581842049132" />
-    <state width="905" height="189" key="GridCell.Tab.2.left" timestamp="1581842049131">
+    <state width="905" height="277" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1582269402816" />
+    <state width="905" height="277" key="GridCell.Tab.2.left" timestamp="1582269402816">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="189" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1581842049131" />
-    <state width="905" height="189" key="GridCell.Tab.2.right" timestamp="1581842049132">
+    <state width="905" height="277" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1582269402816" />
+    <state width="905" height="277" key="GridCell.Tab.2.right" timestamp="1582269402816">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="189" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1581842049132" />
+    <state width="905" height="277" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1582269402816" />
     <state x="213" y="24" key="Maven.ArtifactSearchDialog" timestamp="1580114934016">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -616,10 +587,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1578994996648" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1581668887336">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1581909074759">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1581668887336" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1581909074759" />
     <state x="424" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1579353032094">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

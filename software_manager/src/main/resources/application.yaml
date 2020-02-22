@@ -42,4 +42,11 @@ zuul:
     statistics-application: #统计
       path: /statistics/**
       serviceId: statistics-application
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 600000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+
+
 

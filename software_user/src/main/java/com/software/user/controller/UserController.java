@@ -3,19 +3,25 @@ package com.software.user.controller;
 import com.software.common.entity.PageResult;
 import com.software.common.entity.Result;
 import com.software.common.entity.StatusCode;
+import com.software.common.util.IdWorker;
 import com.software.common.util.JwtUtil;
-import com.software.user.pojo.*;
 import com.software.user.pojo.User;
+import com.software.user.pojo.UserSoftThumb;
 import com.software.user.service.UserService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.bouncycastle.cert.ocsp.Req;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -30,6 +36,9 @@ public class UserController {
 
     @Autowired
     private JwtUtil jwtUtil;
+
+    @Autowired
+    private IdWorker idWorker;
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     @ApiOperation(value = "用户登录")
@@ -122,6 +131,15 @@ public class UserController {
     }
 
 
+    //批量导入用户
+    @RequestMapping(value = "/importUsers",method = RequestMethod.POST)
+    public Result importUsers(MultipartFile file) throws IOException {
+
+
+
+        userService.importUsers(file);
+        return new Result(true,"导入成功",StatusCode.OK);
+    }
 
 
 }
