@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -20,6 +21,18 @@ public class StatisticsController {
 
     @Autowired
     private StatisticsService statisticsService;
+
+
+
+    @RequestMapping(value = "/exportCollege",method = RequestMethod.GET)
+    public void exportCollege() throws IOException {
+        statisticsService.exportCollege();
+    }
+
+    @RequestMapping(value = "/exportSoftware",method = RequestMethod.GET)
+    public void exportSoftware() throws IOException {
+        statisticsService.exportSoftware();
+    }
 
     @RequestMapping(value = "/college",method = RequestMethod.GET)
     public Result college(){

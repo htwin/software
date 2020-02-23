@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="software_classify" />
+        <module name="software_eureka" />
         <module name="software_college" />
         <module name="software_tutorial" />
         <module name="software_manager" />
@@ -14,11 +14,11 @@
         <module name="software_soft" />
         <module name="software_admin" />
         <module name="software-statistics" />
-        <module name="software_common" />
+        <module name="software_classify" />
         <module name="soft_carousel" />
         <module name="software_carousel" />
         <module name="software_user" />
-        <module name="software_eureka" />
+        <module name="software_common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -43,8 +43,8 @@ zuul:
       path: /statistics/**
       serviceId: statistics-application
 ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+  ReadTimeout: 600000
+  ConnectTimeout: 600000
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1
 
