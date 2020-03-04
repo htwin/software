@@ -51,4 +51,18 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xls</include>
+                    <include>**/*.yaml</include>
+                    <include>mapper/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+
 </project>

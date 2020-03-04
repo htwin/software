@@ -31,9 +31,15 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -64,6 +70,9 @@ public class UserService {
 
     @Autowired
     private BCryptPasswordEncoder encode;
+
+    @Autowired
+    private HttpServletResponse response;
 
     public User findByAccountAndPassword(String account,String password){
 
@@ -148,11 +157,16 @@ public class UserService {
     @Transactional
     public void thumb(String userId,String softId){
 
-        userSoftThumbDao.add( userId, softId);
+        UserSoftThumb softThumb = new UserSoftThumb();
+        softThumb.setSoftId(softId);
+        softThumb.setUserId(userId);
+        softThumb.setCreatetime(new Date());
+
+        userMapper.saveThumb(softThumb);
 
         //点赞成功，该软件的点赞数+1，通知soft微服务，，暂时不写
         softClient.thumb(softId);
-
+        System.out.println("成功");
     }
 
     //更新用户下载软件列表
@@ -244,5 +258,29 @@ public class UserService {
         }
 
         userDao.saveAll(list);
+    }
+
+    public void exportTemplate() throws IOException {
+
+        String path = this.getClass().getClassLoader().getResource("muban.xls").getPath();
+
+        InputStream in = new FileInputStream(path);
+
+        ServletOutputStream out = response.getOutputStream();
+
+        String realFilename = URLEncoder.encode("学生导入模板.xls","utf-8");
+
+        response.setContentType("application/octet-stream;charset=utf-8");
+        response.setHeader("Content-Disposition", "attachment; filename=" + realFilename);
+
+        byte [] b = new byte[1024];
+        while (in.read(b)!=-1){
+            out.write(b,0,b.length);
+        }
+
+        out.close();
+        in.close();
+
+
     }
 }

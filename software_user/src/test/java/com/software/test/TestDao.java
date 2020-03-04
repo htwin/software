@@ -6,9 +6,11 @@ import com.alibaba.fastjson.JSONObject;
 import com.software.user.UserApplication;
 import com.software.user.dao.UserDao;
 import com.software.user.dao.UserSoftDownloadDao;
+import com.software.user.dao.UserSoftThumbDao;
 import com.software.user.mapper.UserMapper;
 import com.software.user.pojo.User;
 import com.software.user.pojo.UserSoftDownload;
+import com.software.user.pojo.UserSoftThumb;
 import com.software.user.pojo.UserVo;
 import com.software.user.service.UserService;
 import org.apache.commons.collections.CollectionUtils;
@@ -41,7 +43,21 @@ public class TestDao {
     private UserSoftDownloadDao userSoftDownloadDao;
 
     @Autowired
+    private UserSoftThumbDao userSoftThumbDao;
+
+
+    @Autowired
     private UserMapper userMapper;
+
+    @Test
+    public void add(){
+        UserSoftThumb softThumb = new UserSoftThumb();
+        softThumb.setSoftId("1228611297025855488");
+        softThumb.setUserId("23");
+        softThumb.setCreatetime(new Date());
+        userSoftThumbDao.save(softThumb);
+    }
+
     private Specification createSpecification(User user){
         return new Specification<User>(){
             @Override

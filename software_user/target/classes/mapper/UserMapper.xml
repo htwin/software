@@ -39,4 +39,7 @@
         u.id = ${user.id}
 
     </update>
+    <insert id="saveThumb">
+        insert into user_soft_thumb(user_id,soft_id,createtime) VALUES(#{thumb.userId},#{thumb.softId},#{thumb.createtime})
+    </insert>
 </mapper>

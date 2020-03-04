@@ -141,5 +141,11 @@ public class UserController {
         return new Result(true,"导入成功",StatusCode.OK);
     }
 
+    //导出模板
+    @RequestMapping(value = "/exportTemplate",method = RequestMethod.GET)
+    public void exportTemplate() throws IOException {
+        userService.exportTemplate();
+    }
+
 
 }
