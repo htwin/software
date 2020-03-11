@@ -3,6 +3,8 @@ package com.software.soft.service;
 import com.software.common.util.FastDFSUtil;
 import com.software.common.util.IdWorker;
 import com.software.soft.dao.SoftDao;
+import com.software.soft.mapper.SoftMapper;
+import com.software.soft.pojo.ClassifySoft;
 import com.software.soft.pojo.Soft;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -44,6 +46,9 @@ public class SoftService {
 
     @Autowired
     private IdWorker idWorker;
+
+    @Autowired
+    private SoftMapper softMapper;
 
 
     private Specification createSpecification(Soft soft){
@@ -182,5 +187,11 @@ public class SoftService {
     @Transactional
     public void updateTutorial(int tutorial,String id){
         softDao.updateTutorial(tutorial,id);
+    }
+
+
+    //软件列表   根据类别分类
+    public List<ClassifySoft> classifySofts(){
+        return softMapper.classifySoft();
     }
 }

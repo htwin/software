@@ -242,6 +242,14 @@ public class SoftController {
         softService.updateTutorial(tutorial,id);
     }
 
+
+    //软件列表  根据类别分类
+    @RequestMapping(value = "/classifySoft",method = RequestMethod.GET)
+    @ApiOperation(value = "根据类别 分类软件列表显示")
+    public Result classifySofts(){
+        return new Result(true,"查询成功",StatusCode.OK,softService.classifySofts());
+    }
+
     /*@RequestMapping(value = "/add",method = RequestMethod.POST, headers="content-type=multipart/form-data")
     @ApiOperation(value = "添加软件")
     public Result add(@RequestParam(value = "file") MultipartFile file,

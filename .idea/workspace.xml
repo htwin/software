@@ -4,19 +4,14 @@
     <list default="true" id="ba15edce-619d-4ebd-a67a-71086e19d04b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_common/src/test/java/com/software/common/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_common/src/test/java/com/software/common/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_manager/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_manager/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/dao/UserSoftThumbDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/dao/UserSoftThumbDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/pojo/UserSoftThumb.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/pojo/UserSoftThumb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/java/com/software/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/src/test/java/com/software/test/TestDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/src/test/java/com/software/test/TestDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_user/target/classes/com/software/user/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/controller/SoftController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/java/com/software/soft/service/SoftService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/controller/SoftController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" beforeDir="false" afterPath="$PROJECT_DIR$/software_soft/target/classes/com/software/soft/service/SoftService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +66,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578564062299" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/software_user/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/software_soft/src/main/resources/mapper" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -89,11 +84,11 @@
       <recent name="com.software.soft.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\software_parent\software_soft\src\main\resources\mapper" />
       <recent name="D:\dev\software_parent\software_user\src\main\resources" />
       <recent name="D:\dev\software_parent\software_college\src\main\resources" />
       <recent name="D:\dev\software_parent\software_carousel\src\main\resources" />
       <recent name="D:\dev\software_parent\software_admin\src\main\resources" />
-      <recent name="D:\dev\software_parent\software_tutorial\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -103,7 +98,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestDao.add">
+  <component name="RunManager" selected="Spring Boot.SoftApplication">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.software.common.Test" />
       <module name="software_common" />
@@ -113,6 +108,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoftTest.softTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="software_soft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.software.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.software.test" />
+      <option name="MAIN_CLASS_NAME" value="com.software.test.SoftTest" />
+      <option name="METHOD_NAME" value="softTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -235,9 +246,11 @@
       <item itemvalue="Spring Boot.CarouselApplication" />
       <item itemvalue="Spring Boot.AdminApplication" />
       <item itemvalue="Spring Boot.CollegeApplication" />
+      <item itemvalue="JUnit.SoftTest.softTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SoftTest.softTest" />
         <item itemvalue="JUnit.TestDao.add" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Spring Boot.UserApplication" />
@@ -253,6 +266,16 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -326,6 +349,8 @@
       <workItem from="1582434950400" duration="4420000" />
       <workItem from="1582539027079" duration="2288000" />
       <workItem from="1583294140776" duration="8098000" />
+      <workItem from="1583316917066" duration="131000" />
+      <workItem from="1583896031543" duration="4618000" />
     </task>
     <task id="LOCAL-00001" summary="后端搭建以及软件列表实现">
       <created>1578462293070</created>
@@ -474,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582450838353</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="修复点赞功能bug">
+      <created>1583316969219</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1583316969219</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +570,8 @@
     <MESSAGE value="毕业设计第二版完成" />
     <MESSAGE value="批量新增用户完成" />
     <MESSAGE value="导出数据中心" />
-    <option name="LAST_COMMIT_MESSAGE" value="导出数据中心" />
+    <MESSAGE value="修复点赞功能bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复点赞功能bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="28" key="#Project_Structure" timestamp="1581669674560">
@@ -553,10 +586,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="11" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1581814203461" />
-    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1583299715341">
+    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1583923236666">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1583299715341" />
+    <state x="488" y="53" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1583923236666" />
     <state x="286" y="177" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581814195588">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -573,10 +606,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="438" y="71" key="#xdebugger.evaluate/0.0.1366.738@0.0.1366.738" timestamp="1581734233153" />
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1582450835543">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1583316967282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1582450835543" />
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1583316967282" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1579353079486">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -585,38 +618,38 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1580114983041" />
-    <state width="1323" height="262" key="GridCell.Tab.0.bottom" timestamp="1583313257887">
+    <state width="905" height="266" key="GridCell.Tab.0.bottom" timestamp="1583923992246">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="262" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583313257887" />
-    <state width="1323" height="262" key="GridCell.Tab.0.center" timestamp="1583313257887">
+    <state width="905" height="266" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583923992246" />
+    <state width="905" height="266" key="GridCell.Tab.0.center" timestamp="1583923992246">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="262" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1583313257887" />
-    <state width="1323" height="262" key="GridCell.Tab.0.left" timestamp="1583313257887">
+    <state width="905" height="266" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1583923992246" />
+    <state width="905" height="266" key="GridCell.Tab.0.left" timestamp="1583923992246">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="262" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1583313257887" />
-    <state width="1323" height="262" key="GridCell.Tab.0.right" timestamp="1583313257887">
+    <state width="905" height="266" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1583923992246" />
+    <state width="905" height="266" key="GridCell.Tab.0.right" timestamp="1583923992246">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="262" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1583313257887" />
-    <state width="905" height="266" key="GridCell.Tab.1.bottom" timestamp="1583313257886">
+    <state width="905" height="266" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1583923992246" />
+    <state width="905" height="266" key="GridCell.Tab.1.bottom" timestamp="1583923992246">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="266" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583313257886" />
-    <state width="905" height="266" key="GridCell.Tab.1.center" timestamp="1583313257886">
+    <state width="905" height="266" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1583923992246" />
+    <state width="905" height="266" key="GridCell.Tab.1.center" timestamp="1583923992246">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="266" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1583313257886" />
-    <state width="905" height="266" key="GridCell.Tab.1.left" timestamp="1583313257885">
+    <state width="905" height="266" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1583923992246" />
+    <state width="905" height="266" key="GridCell.Tab.1.left" timestamp="1583923992246">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="266" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1583313257885" />
-    <state width="905" height="266" key="GridCell.Tab.1.right" timestamp="1583313257886">
+    <state width="905" height="266" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1583923992246" />
+    <state width="905" height="266" key="GridCell.Tab.1.right" timestamp="1583923992246">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="266" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1583313257886" />
+    <state width="905" height="266" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1583923992246" />
     <state width="905" height="301" key="GridCell.Tab.2.bottom" timestamp="1583313257869">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -641,10 +674,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1578994996648" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1582450844858">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1583316977303">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1582450844858" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1583316977303" />
     <state x="424" y="103" key="VcsDiffUtil.ChangesDialog" timestamp="1579353032094">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -661,10 +694,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="384" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.738@0.0.1366.738" timestamp="1581748242837" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1579417569986">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1583898123887">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1579417569986" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1583898123887" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -683,6 +716,11 @@
           <url>file://$PROJECT_DIR$/software_user/src/test/java/com/software/test/TestDao.java</url>
           <line>104</line>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/software_soft/src/test/java/com/software/test/SoftTest.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

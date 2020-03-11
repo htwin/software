@@ -25,3 +25,5 @@ jwt:
     ttl: 3600000 #一个小时60 60 3600000 60*60*1000
 fastdf:
   ip: http://192.168.98.132/
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
