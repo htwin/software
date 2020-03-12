@@ -5,6 +5,7 @@ import com.software.common.entity.Result;
 import com.software.common.entity.StatusCode;
 import com.software.common.util.FastDFSUtil;
 import com.software.soft.pojo.Soft;
+import com.software.soft.pojo.UserSoftDownload;
 import com.software.soft.service.SoftService;
 import io.jsonwebtoken.Claims;
 import io.swagger.annotations.Api;
@@ -231,8 +232,8 @@ public class SoftController {
     @RequestMapping(value = "/userDownload/{userId}",method = RequestMethod.GET)
     @ApiOperation(value = "查询用户下载的软件列表")
     public Result userDownload(@PathVariable String userId){
-        List<Soft> softList = softService.userDownload(userId);
-        return new Result(true,"查询成功",StatusCode.OK,softList);
+        List<UserSoftDownload> userSoftDownloads = softService.userDownload(userId);
+        return new Result(true,"查询成功",StatusCode.OK,userSoftDownloads);
     }
 
     //修改是否有教程字段
@@ -240,6 +241,14 @@ public class SoftController {
     @ApiOperation(value = "查询用户下载的软件列表")
     public void updateTutorial(@PathVariable int tutorial,@PathVariable String id){
         softService.updateTutorial(tutorial,id);
+    }
+
+    //评分软件
+    @RequestMapping(value = "/doRate",method = RequestMethod.POST)
+    @ApiOperation(value = "评分软件")
+    public Result doRate(@RequestBody UserSoftDownload userSoftDownload){
+        softService.doRate(userSoftDownload);
+        return new Result(true,"评分成功",StatusCode.OK);
     }
 
 

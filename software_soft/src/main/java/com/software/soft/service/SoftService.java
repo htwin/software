@@ -6,6 +6,7 @@ import com.software.soft.dao.SoftDao;
 import com.software.soft.mapper.SoftMapper;
 import com.software.soft.pojo.ClassifySoft;
 import com.software.soft.pojo.Soft;
+import com.software.soft.pojo.UserSoftDownload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -174,9 +175,9 @@ public class SoftService {
     }
 
     @Transactional
-    public List<Soft> userDownload(String userId) {
+    public List<UserSoftDownload> userDownload(String userId) {
 
-        return softDao.findUserDownload(userId);
+        return softMapper.findUserDownload(userId);
     }
 
     @Transactional
@@ -194,4 +195,31 @@ public class SoftService {
     public List<ClassifySoft> classifySofts(){
         return softMapper.classifySoft();
     }
+
+    //评分
+    @Transactional
+    public void doRate(UserSoftDownload userSoftDownload){
+
+        softMapper.doRate(userSoftDownload);
+
+        //重新计算该软件的评分
+        //获取该软件之前的评分
+        Soft soft = softDao.findById(userSoftDownload.getId()).get();
+
+        float score = 0;
+        if(soft.getScore()>0){
+            //有人评分过
+            score = (soft.getScore()+userSoftDownload.getRate())/2;
+        }else{
+            //没有人评过分
+            score = userSoftDownload.getRate();
+        }
+
+        //重新计算软件的评分
+        softMapper.updateScore(userSoftDownload.getId(),score);
+
+
+
+    }
+
 }
