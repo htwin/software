@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.software.soft.mapper.SoftMapper">
+
+    <resultMap id="myMap" type="com.software.soft.pojo.ClassifySoft">
+        <id column="classifyId" property="classifyId"></id>
+        <result column="classifyName" property="classifyName"></result>
+        <collection property="softs" ofType="com.software.soft.pojo.Soft">
+            <id column="softId"  property="id"></id>
+            <result column="softName" property="name"></result>
+            <result column="softPic" property="pic"></result>
+        </collection>
+    </resultMap>
+
+   <select id="classifySoft" resultMap="myMap">
+        select
+        c.id classifyId ,c.name classifyName,s.id softId,s.name softName, s.pic softPic
+        from classify c,soft s
+        where s.classify_id = c.id
+   </select>
+    <select id="findUserDownload" resultType="com.software.soft.pojo.UserSoftDownload">
+        select s.id,s.`name`,s.pic,usd_rate.is_rate isRate,usd_rate.rate,usd_rate.id usdId
+        from soft s,
+        (select DISTINCT id, soft_id,is_rate,rate from user_soft_download where user_id = #{userId}) as usd_rate
+        where usd_rate.soft_id = s.id
+    </select>
+    <update id="doRate">
+        update
+        user_soft_download
+        set
+        is_rate = 1,
+        rate = #{userSoftDownload.rate}
+        where id = #{userSoftDownload.usdId}
+    </update>
+    <update id="updateScore">
+        update
+        soft
+        set
+        score = #{score}
+        where id = #{softId}
+    </update>
+</mapper>
