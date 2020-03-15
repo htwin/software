@@ -26,6 +26,9 @@
         (select DISTINCT id, soft_id,is_rate,rate from user_soft_download where user_id = #{userId}) as usd_rate
         where usd_rate.soft_id = s.id
     </select>
+    <select id="findUserThumb" resultType="com.software.soft.pojo.Soft">
+        select * from soft where id in (select soft_id from user_soft_thumb where user_id = #{userId})
+    </select>
     <update id="doRate">
         update
         user_soft_download

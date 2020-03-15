@@ -5,9 +5,7 @@ import org.csource.common.MyException;
 import org.csource.fastdfs.*;
 import org.junit.runner.RunWith;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 
 public class Test {
 
@@ -30,17 +28,20 @@ public class Test {
             //storage client
             StorageClient storageClient = new StorageClient(trackerServer, storageServer);
 
-            String[] upload_file = storageClient.upload_file("D:\\我\\2020毕业论文\\轮播2.png", "png", null);
+            byte[] file = storageClient.download_file("group1", "M00/00/00/wKhihF5JCD-ACjnSAACBPhdy35o647.jpg");
 
-            System.out.println(upload_file[0]+"/"+upload_file[1]);
+            File f = new File("D:/temp/2.jpg");
+            FileOutputStream outputStream = new FileOutputStream(f);
 
+            outputStream.write(file);
+
+            outputStream.close();
 
         } catch (IOException e) {
             e.printStackTrace();
         } catch (MyException e) {
             e.printStackTrace();
         }
-
     }
 
 }

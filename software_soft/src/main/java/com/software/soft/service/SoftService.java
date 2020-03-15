@@ -170,7 +170,7 @@ public class SoftService {
     @Transactional
     public List<Soft> userThumb(String userId) {
 
-        return softDao.findUserThumb(userId);
+        return softMapper.findUserThumb(userId);
 
     }
 

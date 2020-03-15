@@ -1,6 +1,7 @@
 package com.software.user.mapper;
 
 import com.software.user.pojo.User;
+import com.software.user.pojo.UserSoftDownload;
 import com.software.user.pojo.UserSoftThumb;
 import com.software.user.pojo.UserVo;
 import org.apache.ibatis.annotations.Mapper;
@@ -18,4 +19,6 @@ public interface UserMapper {
     void update(@Param("user") User user);
 
     void saveThumb(@Param("thumb") UserSoftThumb thumb);
+
+    void saveDownloads(@Param("download") UserSoftDownload download);
 }

@@ -42,4 +42,7 @@
     <insert id="saveThumb">
         insert into user_soft_thumb(user_id,soft_id,createtime) VALUES(#{thumb.userId},#{thumb.softId},#{thumb.createtime})
     </insert>
+    <insert id="saveDownloads">
+        insert into user_soft_download(id,user_id,soft_id,createtime) VALUES(#{download.id},#{download.userId},#{download.softId},#{download.createtime})
+    </insert>
 </mapper>

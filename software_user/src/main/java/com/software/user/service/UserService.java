@@ -174,11 +174,21 @@ public class UserService {
     public void downloads(String userId,String softId){
 
         UserSoftDownload download = userSoftDownloadDao.findByUserIdAndAndSoftId(userId, softId);
+
+        //如果该用户没有下载这软件，则添加
         if(download == null){
-            userSoftDownloadDao.add(userId,softId,new Date());
+            UserSoftDownload d = new UserSoftDownload();
+            d.setId(idWorker.nextId()+"");
+            d.setUserId(userId);
+            d.setSoftId(softId);
+            d.setCreatetime(new Date());
+           userMapper.saveDownloads(d);
+            //通知软件微服务 下载数加一  feign 调用
+            softClient.updateDownload(softId);
         }
-        //通知软件微服务 下载数加一  feign 调用
-        softClient.updateDownload(softId);
+
+
+
     }
 
     public UserSoftThumb getUserSoftThu(String userId, String softId) {
